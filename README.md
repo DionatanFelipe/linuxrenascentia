@@ -119,7 +119,7 @@ cp -r ~/.config/waybar ~/backup/
 ### 2. Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/Linux-Renascentia.git
+git clone https://github.com/DionatanFelipe/linuxrenascentia.git
 cd Linux-Renascentia
 ```
 
