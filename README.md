@@ -203,6 +203,8 @@ Pressione `Mod+Shift+C` para recarregar o Sway e aplicar todas as mudanças.
 Pronto! O Linux-Renascentia está instalado. 🎨
 
 ---
+Tema para firefox:
+https://addons.mozilla.org/firefox/addon/linux-renascentia/
 
 ## ⚠️ Observações Importantes
 
@@ -430,6 +432,9 @@ Press `Mod+Shift+C` to reload Sway and apply all changes.
 
 Done! Linux-Renascentia is installed. 
 
+Firefox theme:
+https://addons.mozilla.org/firefox/addon/linux-renascentia/
+
 ---
 
 ## ⚠️ Important Notes
@@ -648,6 +653,9 @@ sudo cp -r Linux-Renascentia/usr/share/icons/* /usr/share/icons/
 Presiona `Mod+Shift+C` para recargar Sway y aplicar todos los cambios.
 
 ¡Listo! Linux-Renascentia está instalado. 
+
+Thema a Firefox:
+https://addons.mozilla.org/firefox/addon/linux-renascentia/
 
 ---
 
