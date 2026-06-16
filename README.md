@@ -130,11 +130,23 @@ cp -r ~/.config/swaylock ~/backup/
 cp -r ~/.config/waybar ~/backup/
 ```
 
-### 2. Clonar o repositório
+### 2. Baixe o repositório
+
+
+https://github.com/DionatanFelipe/linuxrenascentia/releases/download/Linux%2CTheme%2CSway/Linux-Renascentia.tar.gz
+
+https://github.com/DionatanFelipe/linuxrenascentia/releases/download/Linux%2CTheme%2CSway/Linux-Renascentia.zip
 
 ```bash
-git clone https://github.com/DionatanFelipe/linuxrenascentia.git
+
 cd Linux-Renascentia
+```
+Ou
+
+```bash
+git clone https://github.com/tu-usuario/Linux-Renascentia.git
+cd Linux-Renascentia
+```
 ```
 
 ### 3. Instalar as configurações do Sway
@@ -335,10 +347,18 @@ cp -r ~/.config/swaylock ~/backup/
 cp -r ~/.config/waybar ~/backup/
 ```
 
-### 2. Clone the repository
+### 2. Download the repository
 
+https://github.com/DionatanFelipe/linuxrenascentia/releases/download/Linux%2CTheme%2CSway/Linux-Renascentia.tar.gz
+
+https://github.com/DionatanFelipe/linuxrenascentia/releases/download/Linux%2CTheme%2CSway/Linux-Renascentia.zip
 ```bash
-git clone https://github.com/your-username/Linux-Renascentia.git
+
+cd Linux-Renascentia
+```
+or
+```bash
+git clone https://github.com/tu-usuario/Linux-Renascentia.git
 cd Linux-Renascentia
 ```
 
@@ -524,7 +544,15 @@ cp -r ~/.config/swaylock ~/backup/
 cp -r ~/.config/waybar ~/backup/
 ```
 
-### 2. Clonar el repositorio
+### 2. Download el repositorio
+https://github.com/DionatanFelipe/linuxrenascentia/releases/download/Linux%2CTheme%2CSway/Linux-Renascentia.tar.gz
+
+https://github.com/DionatanFelipe/linuxrenascentia/releases/download/Linux%2CTheme%2CSway/Linux-Renascentia.zip
+```bash
+
+cd Linux-Renascentia
+```
+o
 
 ```bash
 git clone https://github.com/tu-usuario/Linux-Renascentia.git
