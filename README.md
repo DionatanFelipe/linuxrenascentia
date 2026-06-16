@@ -1,65 +1,76 @@
-
-```markdown
-# Linux Renascentia — PT-BR - ENG - ES
+## Linux Renascentia (PT-BR | EN | ES)
 
 ---
-## 📸 Screenshots
 
-### 🖥️ Desktop Completo
-```
-![Preview](2026-06-15T20:43:46,021489909-03:00.png)
+## Screenshots
 
-```
+![Preview](home.png)
+
+# Atenção - Attention
+![Preview](at.jpg)
+![Preview](at2.png)
+
+---
+
+## GTK3
+
+![Preview](gtk.png)
+![Preview](gtk2.png)
+![Preview](gtk3.png)
 
 
+---
 
-###  Rofi
-```
-![Preview](2026-06-15T20:59:43,275917012-03:00.png)
+## Rofi
+
+![Preview](rofi.png)
+![Preview](desl.png)
 
 
-```
+---
 
-###  Dunst
-```
-![Preview](2026-06-15T20:55:10,414236053-03:00.png)
+## Dunst
 
-```
+![Preview](dust.png)
+![Preview](dust2.png)
 
-###  SDDM - A Primavera
-```
+---
+
+## SDDM — A Primavera
+
 ![Preview](p1.png)
 ![Preview](p2.png)
 
-```
+---
 
-###  SDDM - O Nascimento de Vênus
-```
+## SDDM — O Nascimento de Vênus
+
 ![Preview](v1.png)
 ![Preview](v2.png)
 
-```
+---
+## Firefox GTK
+![Preview](figtk.png)
+![Preview](fgtk2.png)
+![Preview](fgtk3.png)
 
-###  GTK3
-```
-![Preview](2026-06-15T20:43:56,791968021-03:00.png)
+# Firefox theme
+![Preview](ft.png)
+![Preview](ft2.png)
 
-```
+https://addons.mozilla.org/firefox/addon/linux-renascentia/
 
 
-##Português (Brasil)
 
 ---
+##Português (Brasil)
+
 
 # 🎨 Linux-Renascentia
 
 > Um tema para Sway onde o minimalismo contemporâneo encontra a sofisticação do Renascimento.
 
----
 
-<p align="center">
-  <i>✨ Prints do tema em breve ✨</i>
-</p>
 
 ---
 
@@ -241,11 +252,7 @@ Este projeto está sob a licença MIT.
 
 > A Sway theme where contemporary minimalism meets Renaissance sophistication.
 
----
 
-<p align="center">
-  <i>✨ Theme screenshots coming soon ✨</i>
-</p>
 
 ---
 
@@ -427,11 +434,7 @@ Contributions are very welcome! Feel free to:
 
 > Un tema para Sway donde el minimalismo contemporáneo encuentra la sofisticación del Renacimiento.
 
----
 
-<p align="center">
-  <i>✨ Capturas del tema próximamente ✨</i>
-</p>
 
 ---
 
