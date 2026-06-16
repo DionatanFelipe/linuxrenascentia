@@ -3,6 +3,49 @@
 # Linux Renascentia — PT-BR - ENG - ES
 
 ---
+## 📸 Screenshots
+
+### 🖥️ Desktop Completo
+```
+![Preview](2026-06-15T20:43:46,021489909-03:00.png)
+
+```
+
+
+
+###  Rofi
+```
+![Preview](2026-06-15T20:59:43,275917012-03:00.png)
+
+
+```
+
+###  Dunst
+```
+![Preview](2026-06-15T20:55:10,414236053-03:00.png)
+
+```
+
+###  SDDM - A Primavera
+```
+![Preview](p1.png)
+![Preview](p2.png)
+
+```
+
+###  SDDM - O Nascimento de Vênus
+```
+![Preview](v1.png)
+![Preview](v2.png)
+
+```
+
+###  GTK3
+```
+![Preview](2026-06-15T20:43:56,791968021-03:00.png)
+
+```
+
 
 ##Português (Brasil)
 
@@ -54,50 +97,6 @@ O resultado é um ambiente imersivo, com cores quentes e equilibradas, pensado p
   - Alternativo: *O Nascimento de Vênus* (Botticelli)
 -  **Foot** — tema para o terminal
 -  **Rofi** — menus e lançadores
-
----
-
-## 📸 Screenshots
-
-### 🖥️ Desktop Completo
-```
-[ESPAÇO PARA PRINT DO DESKTOP]
-```
-
-###  Waybar
-```
-[ESPAÇO PARA PRINT DA WAYBAR]
-```
-
-###  Rofi
-```
-[ESPAÇO PARA PRINT DO ROFI]
-```
-
-###  Dunst
-```
-[ESPAÇO PARA PRINT DAS NOTIFICAÇÕES]
-```
-
-###  Swaylock
-```
-[ESPAÇO PARA PRINT DA TELA DE BLOQUEIO]
-```
-
-###  SDDM - A Primavera
-```
-[ESPAÇO PARA PRINT DO SDDM PRIMAVERA]
-```
-
-###  SDDM - O Nascimento de Vênus
-```
-[ESPAÇO PARA PRINT DO SDDM VÊNUS]
-```
-
-###  GTK3
-```
-[ESPAÇO PARA PRINT DO TEMA GTK3]
-```
 
 ---
 
@@ -287,46 +286,10 @@ The result is an immersive environment, with warm and balanced colors, designed 
 
 ---
 
-## 📸 Screenshots
-
-### 🖥️ Full Desktop
-```
-[SPACE FOR DESKTOP SCREENSHOT]
-```
-
-###  Waybar
-```
-[SPACE FOR WAYBAR SCREENSHOT]
-```
-
-###  Rofi
-```
-[SPACE FOR ROFI SCREENSHOT]
-```
-
-###  Dunst
-```
-[SPACE FOR NOTIFICATIONS SCREENSHOT]
-```
-
-###  Swaylock
-```
-[SPACE FOR LOCK SCREEN SCREENSHOT]
-```
-
-###  SDDM - Primavera
-```
-[SPACE FOR SDDM PRIMAVERA SCREENSHOT]
-```
-
-###  SDDM - The Birth of Venus
-```
-[SPACE FOR SDDM VENUS SCREENSHOT]
-```
 
 ###  GTK3
 ```
-[SPACE FOR GTK3 THEME SCREENSHOT]
+![Preview](2026-06-15T20:43:56,791968021-03:00.png)
 ```
 
 ---
@@ -506,50 +469,6 @@ El resultado es un entorno inmersivo, con colores cálidos y equilibrados, pensa
   - Alternativo: *El Nacimiento de Venus* (Botticelli)
 -  **Foot** — tema para el terminal
 - **Rofi** — menús y lanzadores
-
----
-
-## 📸 Capturas de Pantalla
-
-### 🖥️ Escritorio Completo
-```
-[ESPACIO PARA CAPTURA DEL ESCRITORIO]
-```
-
-###  Waybar
-```
-[ESPACIO PARA CAPTURA DE WAYBAR]
-```
-
-###  Rofi
-```
-[ESPACIO PARA CAPTURA DE ROFI]
-```
-
-###  Dunst
-```
-[ESPACIO PARA CAPTURA DE NOTIFICACIONES]
-```
-
-###  Swaylock
-```
-[ESPACIO PARA CAPTURA DE PANTALLA DE BLOQUEO]
-```
-
-###  SDDM - La Primavera
-```
-[ESPACIO PARA CAPTURA DE SDDM PRIMAVERA]
-```
-
-###  SDDM - El Nacimiento de Venus
-```
-[ESPACIO PARA CAPTURA DE SDDM VENUS]
-```
-
-### 🎨 GTK3
-```
-[ESPACIO PARA CAPTURA DEL TEMA GTK3]
-```
 
 ---
 
