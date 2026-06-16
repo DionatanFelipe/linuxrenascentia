@@ -222,6 +222,21 @@ https://addons.mozilla.org/firefox/addon/linux-renascentia/
 
 ## ⚠️ Observações Importantes
 
+Caso queira que não fique em alguns casos ... no waybar onde é o  layout do teclado( mesmo após no terminal  `sudo usermod -aG input $USER`) em alguns programas, é necessário mudar a fonte no config do waybar, uso a inter. 
+
+
+Para ativar o gtk no firefox caso não aparece ou esteja com preferencias modo claro, no firefox  vá em `about:config` e crie:
+```
+ui.systemUsesDarkTheme
+```
+
+e adicione = :
+```
+1
+```
+
+
+
 - O tema **GTK3** foi feito sem conhecimento aprofundado. Bugs e inconsistências visuais podem ocorrer — sinta-se livre para reportar ou corrigir.
 - As cores da **Waybar** foram pensadas para o wallpaper padrão (*A Primavera*). Ao trocar o papel de parede, talvez seja necessário ajustar transparência ou tons manualmente no arquivo de configuração.
 - Para uma experiência completa, recomenda-se usar os wallpapers incluídos com o tema SDDM correspondente.
@@ -413,6 +428,21 @@ https://addons.mozilla.org/firefox/addon/linux-renascentia/
 
 ## ⚠️ Important Notes
 
+If you want certain things not to appear in some cases, for example in the Waybar keyboard layout module (even after running `sudo usermod -aG input $USER` in the terminal), in some programs it may be necessary to change the font in the Waybar config. I use Inter.
+
+To enable GTK theming in Firefox when it does not appear correctly or is stuck in light mode, go to `about:config` in Firefox and create the preference:
+
+```
+ui.systemUsesDarkTheme
+```
+
+and set it to:
+
+```
+1
+```
+
+
 - The **GTK3** theme was made without deep knowledge. Bugs and visual inconsistencies may occur — feel free to report or fix them.
 - **Waybar** colors were designed for the default wallpaper (*Primavera*). When changing the wallpaper, you may need to manually adjust transparency or tones in the configuration file.
 - For a complete experience, we recommend using the wallpapers included with the corresponding SDDM theme.
@@ -586,6 +616,22 @@ https://addons.mozilla.org/firefox/addon/linux-renascentia/
 ---
 
 ## ⚠️ Notas Importantes
+
+
+Si quieres que algunas cosas no aparezcan en ciertos casos ..., por ejemplo en el módulo de distribución del teclado en Waybar (incluso después de ejecutar `sudo usermod -aG input $USER` en la terminal), en algunos programas puede ser necesario cambiar la fuente en la configuración de Waybar. Yo uso Inter.
+
+Para activar el tema GTK en Firefox cuando no aparece o está en modo claro, ve a `about:config` en Firefox y crea la preferencia:
+
+```
+ui.systemUsesDarkTheme
+```
+
+y configúrala en:
+
+```
+1
+```
+
 
 - El tema **GTK3** fue hecho sin conocimiento profundo. Pueden ocurrir bugs e inconsistencias visuales — siéntete libre de reportarlos o corregirlos.
 - Los colores de **Waybar** fueron pensados para el wallpaper predeterminado (*La Primavera*). Al cambiar el papel tapiz, puede ser necesario ajustar transparencia o tonos manualmente en el archivo de configuración.
