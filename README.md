@@ -11,7 +11,16 @@
 ![Preview](home.png)
 
 # Atenção - Attention
+
+
+
 ![Preview](at.jpg)
+
+
+![Preview](bateria.jpg)
+
+
+
 ![Preview](at2.png)
 
 ---
@@ -57,6 +66,7 @@
 ![Preview](figtk.png)
 ![Preview](fgtk2.png)
 ![Preview](fgtk3.png)
+
 
 # Firefox theme
 ![Preview](ft.png)
