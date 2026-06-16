@@ -1,4 +1,8 @@
-## Linux Renascentia (PT-BR | EN | ES)
+##
+<h1 align="center">Linux·Renascentia</h1>
+ 
+
+ ## SWAY Theme (PT-BR | EN | ES)
 
 ---
 
