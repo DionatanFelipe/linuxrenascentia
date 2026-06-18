@@ -8,77 +8,77 @@
 
 ## Screenshots
 
-![Preview](home.png)
+![Preview](captura/home.png)
 
 2.0
 
-![Preview](2/2.01.png)
+![Preview](captura/2.01.png)
 
 
 # Atenção - Attention
 
 
 
-![Preview](at.jpg)
+![Preview](captura/at.png)
 
 
-![Preview](bateria.jpg)
+![Preview](captura/bateria.jpg)
 
 
 
-![Preview](at2.png)
+![Preview](captura/at2.png)
 
 2.0
 
-![Preview](2/2At.jpg)
+![Preview](captura/2At.jpg)
 ---
 
 ## GTK3
 
-![Preview](gtk.png)
-![Preview](gtk2.png)
-![Preview](gtk3.png)
+![Preview](captura/gtk.png)
+![Preview](captura/gtk2.png)
+![Preview](captura/gtk3.png)
 
 
 ---
 
 ## Rofi
 
-![Preview](rofi.png)
-![Preview](desl.png)
+![Preview](captura/rofi.png)
+![Preview](captura/desl.png)
 
 
 ---
 
 ## Dunst
 
-![Preview](dust.png)
-![Preview](dust2.png)
+![Preview](captura/dust.png)
+![Preview](captura/dust2.png)
 
 ---
 
 ## SDDM — A Primavera
 
-![Preview](p1.png)
-![Preview](p2.png)
+![Preview](captura/p1.png)
+![Preview](captura/p2.png)
 
 ---
 
 ## SDDM — O Nascimento de Vênus
 
-![Preview](v1.png)
-![Preview](v2.png)
+![Preview](captura/v1.png)
+![Preview](captura/v2.png)
 
 ---
 ## Firefox GTK
-![Preview](figtk.png)
-![Preview](fgtk2.png)
-![Preview](fgtk3.png)
+![Preview](captura/figtk.png)
+![Preview](captura/fgtk2.png)
+![Preview](captura/fgtk3.png)
 
 
 # Firefox theme
-![Preview](ft.png)
-![Preview](ft2.png)
+![Preview](captura/ft.png)
+![Preview](captura/ft2.png)
 
 https://addons.mozilla.org/firefox/addon/linux-renascentia/
 
