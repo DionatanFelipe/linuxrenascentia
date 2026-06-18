@@ -1,0 +1,30 @@
+[colors]
+foreground=F5F5F5    # mais branco (melhor leitura)
+background=0F1A14
+
+regular0=1A1A1A
+regular1=FF6A6A      # vermelho mais visível
+regular2=2DFFB3      # verde mais brilhante (melhor contraste)
+regular3=C98A2E      # cobre (mantido)
+regular4=C98A2E     # pastas cobre
+regular5=FF7AFF
+regular6=5FFFE0      # ciano mais claro
+regular7=FFFFFF      # branco puro (IMPORTANTE)
+
+bright0=3A3A3A
+bright1=FF8A8A
+bright2=4DFFD0
+bright3=FFD98A
+bright4=E0A85A      # cobre mais “vivo”
+bright5=FFAAFF
+bright6=8AFFFF
+bright7=FFFFFF
+
+dim0=0A0F0C
+dim1=C44A4A
+dim2=1FAF7A
+dim3=9A6A2A
+dim4=8A5A1E
+dim5=B85FB8
+dim6=2A9F96
+dim7=B0B0B0

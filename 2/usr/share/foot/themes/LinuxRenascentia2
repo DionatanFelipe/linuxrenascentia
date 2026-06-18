@@ -1,0 +1,30 @@
+[colors]
+foreground=f2f4f3
+background=0a1210
+
+regular0=1a1f1c
+regular1=a14b4b      # vermelho vinho (alerta histórico)
+regular2=6fae8a      # verde oliva renascentista
+regular3=b87333      # cobre (teu acento principal)
+regular4=9c7a4a      # cobre escuro / madeira
+regular5=8a6aa8      # roxo antigo (bem suave)
+regular6=6fa6a0      # ciano apagado (vidro envelhecido)
+regular7=e6e6e0      # branco pergaminho (não puro)
+
+bright0=2a2f2c
+bright1=c06a6a
+bright2=8fcaa0
+bright3=d29a4a
+bright4=c58a4a
+bright5=b08ad0
+bright6=8fc9c2
+bright7=f5f4ef
+
+dim0=0a0f0c
+dim1=7a3a3a
+dim2=3f6a52
+dim3=6a4a22
+dim4=5a3a16
+dim5=6a4a7a
+dim6=3a6a66
+dim7=90908a

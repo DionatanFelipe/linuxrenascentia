@@ -1,0 +1,92 @@
+/**
+ * ROFI Theme - Renascentia
+ 
+ */
+
+* {
+  font: "Iosevka Nerd Font Medium 11";
+
+  bg0     : #0A0F0C;
+  bg1     : #0F1A14;
+  bg2     : #12261D;
+  bg3     : #1E3A2E;
+
+  fg0     : #E6E6E6;   /* texto principal legível */
+  fg1     : #C8C8C8;
+
+  green   : #00FF9C;
+  copper  : #CD7F32;   /* TEU COBRE REAL */
+  accent  : #CD7F32;   /* cobre dominante */
+  urgent  : #FF4F4F;
+
+  background-color : transparent;
+  text-color       : #E6E6E6;
+}
+
+/* ===== WINDOW ===== */
+window {
+  background-color: #0F1A14;
+  border: 1px;
+  border-color: #CD7F32;
+  border-radius: 3px;
+}
+
+/* ===== INPUT ===== */
+inputbar {
+  spacing: 6px;
+  padding: 8px 10px;
+
+  background-color: #0F1A14;
+  border: 1px;
+  border-color: #CD7F32;
+
+  text-color: #FFFFFF;
+}
+
+entry {
+  text-color: #FFFFFF;
+  background-color: transparent;
+}
+
+icon-search {
+  color: #CD7F32;
+}
+
+/* ===== LIST ===== */
+listview {
+  padding: 6px;
+  lines: 10;
+  columns: 1;
+    fixed-height: false;
+  dynamic: true;
+}
+
+/* ===== ELEMENTOS ===== */
+element {
+  padding: 6px 10px;
+  background-color: #12261D;
+  border-radius: 2px;
+  text-color: #E6E6E6;
+}
+
+/* hover */
+element selected {
+  background-color: #CD7F32;
+  text-color: #0A0F0C;
+}
+
+/* alternado */
+element alternate {
+  background-color: #0F1A14;
+}
+
+/* urgente */
+element normal urgent {
+  text-color: #FF4F4F;
+}
+
+/* ===== SCROLLBAR ===== */
+scrollbar {
+  handle-width: 4px;
+  handle-color: #CD7F32;
+}

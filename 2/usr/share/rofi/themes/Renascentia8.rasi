@@ -1,0 +1,84 @@
+* {
+  font: "Iosevka Nerd Font Medium 11";
+
+  background-color: transparent;
+  text-color: #f2f4f3;
+}
+
+/* ===================== */
+/* WINDOW                */
+/* ===================== */
+window {
+  background-color: #0d1f1a;
+  border: 1px;
+  border-color: #b87333;
+  border-radius: 4px;
+}
+
+/* ===================== */
+/* INPUT                */
+/* ===================== */
+inputbar {
+  spacing: 8px;
+  padding: 10px 12px;
+
+  background-color: #10251f;
+  border: 1px;
+  border-color: #b87333;
+
+  text-color: #f2f4f3;
+}
+
+entry {
+  text-color: #f2f4f3;
+  background-color: transparent;
+}
+
+icon-search {
+  color: #b87333;
+}
+
+/* ===================== */
+/* LIST                 */
+/* ===================== */
+listview {
+  padding: 6px;
+  lines: 10;
+  columns: 1;
+  fixed-height: false;
+  dynamic: true;
+}
+
+/* ===================== */
+/* ELEMENTOS           */
+/* ===================== */
+element {
+  padding: 7px 10px;
+  background-color: #10251f;
+  border-radius: 3px;
+  text-color: #f2f4f3;
+}
+
+/* selecionado */
+element selected {
+  background-color: #b87333;
+  text-color: #0a1210;
+}
+
+/* alternado */
+element alternate {
+  background-color: #0f1a14;
+}
+
+/* urgente */
+element normal urgent {
+  text-color: #a14b4b;
+}
+
+/* ===================== */
+/* SCROLLBAR           */
+/* ===================== */
+scrollbar {
+  handle-width: 4px;
+  handle-color: #b87333;
+}
