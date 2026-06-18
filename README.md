@@ -15,6 +15,11 @@
 
 ![Preview](captura/2.01.png)
 
+![Preview](captura/desb.jpg)
+
+![Preview](captura/bloq.jpg)
+
+
 
 # Atenção - Attention
 
@@ -25,6 +30,7 @@
 
 ![Preview](captura/bateria.jpg)
 
+![Preview](captura/at3.jpg)
 
 
 ![Preview](captura/at2.png)
