@@ -1,0 +1,30 @@
+[colors]
+foreground=00FF00    # Texto verde neon
+background=000000    # Fundo preto
+
+regular0=1e1e1e      # Cinza escuro (quase preto)
+regular1=FF0000      # Vermelho
+regular2=00FF00      # Verde
+regular3=FFFF00      # Amarelo
+regular4=0000FF      # Azul
+regular5=FF00FF      # Magenta
+regular6=00FFFF      # Ciano
+regular7=FFFFFF      # Branco
+
+bright0=5a5a5a       # Cinza mais claro
+bright1=FF3333       # Vermelho mais claro
+bright2=33FF33       # Verde mais claro
+bright3=FFFF33       # Amarelo mais claro
+bright4=3333FF       # Azul mais claro
+bright5=FF33FF       # Magenta mais claro
+bright6=33FFFF       # Ciano mais claro
+bright7=F3F3F3       # Branco mais claro
+
+dim0=0a0a0a          # Preto ainda mais escuro
+dim1=B71A1A          # Vermelho escuro
+dim2=1AB71A          # Verde escuro
+dim3=B5B50A          # Amarelo escuro
+dim4=0A4FAA          # Azul escuro
+dim5=A71AA7          # Magenta escuro
+dim6=1AA59F          # Ciano escuro
+dim7=A5A5A5          # Cinza escuro

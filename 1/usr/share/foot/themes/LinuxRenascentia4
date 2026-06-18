@@ -1,0 +1,33 @@
+[colors]
+foreground=d8d6cf    # pergaminho frio (legível mas místico)
+background=0a0f0c    # quase preto esverdeado profundo
+
+# --- BASE OCULTA ---
+regular0=101612      # sombra viva
+regular1=8a3f3f      # sangue ritual (suave)
+regular2=3f6a52      # verde alquímico profundo
+regular3=a8733a      # cobre ritual (centro visual)
+regular4=5a3f2a      # bronze queimado
+regular5=5a4a6a      # violeta oculto
+regular6=3a6a66      # água/éter
+regular7=e6e2d6      # luz de pergaminho
+
+# --- BRIGHT (energia contida) ---
+bright0=1a221d
+bright1=a85a5a
+bright2=5f8a72
+bright3=c08a4a
+bright4=8a6a3a
+bright5=7a5a8a
+bright6=5f8a86
+bright7=f0ede4
+
+# --- DIM (sombra ritual) ---
+dim0=0a0f0c
+dim1=5a2f2f
+dim2=2f4a3c
+dim3=5a3f1f
+dim4=4a3218
+dim5=4a3a52
+dim6=2f4a48
+dim7=7a7a72

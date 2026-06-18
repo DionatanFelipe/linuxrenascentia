@@ -1,0 +1,101 @@
+/**
+ * ROFI Theme - Renascentia - Couro/Bronze Refinado (Selecionado Atualizado)
+ */
+
+* {
+    font: "Iosevka Nerd Font Medium 11";
+
+    /* Fundos */
+    bg0     : #0A0F0C;
+    bg1     : #0F1A14;
+    bg2     : #12261D;
+    bg3     : #1E3A2E;
+
+    /* Textos */
+    fg0     : #E6E6E6;
+    fg1     : #C8C8C8;
+
+    /* Destaques */
+    green   : #3A6B48;
+    copper  : #AA5F32;
+    accent  : #C27C4A;
+    urgent  : #DC3C3C;
+
+    background-color : transparent;
+    text-color       : #E6E6E6;
+}
+
+/* ===== WINDOW ===== */
+window {
+    background-color: #0F1A14;
+    border: 1px;
+    border-color: #C27C4A;
+    border-radius: 3px;
+}
+
+/* ===== INPUT ===== */
+/* ===== INPUT ===== */
+inputbar {
+    spacing: 6px;
+    padding: 8px 10px;
+
+    background-color: #36261A;  /* couro profundo / bronze escuro */
+    border: 1px;
+    border-color: #AA5F32;      /* bronze suave */
+    border-radius: 3px;
+
+    text-color: #E6E6E6;        /* contraste claro */
+}
+
+entry {
+    text-color: #E6E6E6;
+    background-color: #36261A;  /* mesma cor do inputbar para unidade */
+}
+
+/* ===== LIST ===== */
+listview {
+    padding: 6px;
+    lines: 10;
+    columns: 1;
+    fixed-height: false;
+    dynamic: true;
+}
+
+/* ===== ELEMENTOS ===== */
+element {
+    padding: 6px 10px;
+    background-color: #2A1E12;
+    border: 1px;
+    border-color: #AA5F32;
+    border-radius: 2px;
+    text-color: #E6E6E6;
+}
+
+/* hover / selecionado */
+/* hover / selecionado */
+/* hover / selecionado */
+element selected {
+    background-color: #1E5F3C; /* verde floresta profundo e vivo */
+    border: 1px;
+    border-color: #C27C4A;    /* bronze da borda */
+    text-color: #E6E6E6;      /* claro para contraste */
+}
+
+/* alternado */
+element alternate {
+    background-color: #1E120A;
+}
+
+/* urgente */
+element normal urgent {
+    text-color: #DC3C3C;
+    background-color: #2A1E12;
+    border: 1px;
+    border-color: #C27C4A;
+}
+
+/* ===== SCROLLBAR ===== */
+scrollbar {
+    handle-width: 4px;
+    handle-color: #C27C4A;
+}
