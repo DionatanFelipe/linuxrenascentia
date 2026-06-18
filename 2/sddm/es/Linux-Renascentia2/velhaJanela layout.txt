@@ -1,0 +1,101 @@
+    // Login
+    ColumnLayout {
+        anchors.centerIn: parent
+        spacing: 20
+
+        Column {
+            Layout.alignment: Qt.AlignHCenter
+            spacing: 12
+
+            Text {
+                text: root.loginError ? "ACESSO·NEGADO" : "Bem·vindo"
+                color: root.loginError ? "#F0EAD6" : "#F0EAD6"
+                font.pixelSize: 36
+                font.family: "EB Garamond Italic"
+                font.bold: true
+                horizontalAlignment: Text.AlignHCenter
+                anchors.horizontalCenter: parent.horizontalCenter
+            }
+
+
+
+
+
+
+
+
+            Rectangle {
+                visible: root.loginError
+                color: "#B22222AA"
+                radius: 5
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: 280
+                height: 32
+
+                Text {
+                    anchors.centerIn: parent
+                    text: "Usuário·ou·senha·incorretos"
+                    color: "#F0EAD6"
+                    font.pixelSize: 14
+                    font.family: "EB Garamond Italic"
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                }
+            }
+            
+            
+            
+            modificado
+            
+            ColumnLayout {
+    anchors.centerIn: parent
+    spacing: 20
+
+    Column {
+        Layout.alignment: Qt.AlignHCenter
+        spacing: 12
+
+        Rectangle {
+            width: 300
+            height: 50
+            radius: 8
+            color: root.loginError ? "#5C4B3C" : "#3D372B" // marrom escuro ou tom do tema
+            border.color: "#A67C52"  // borda dourada
+            border.width: 1
+            anchors.horizontalCenter: parent.horizontalCenter
+
+            Text {
+                anchors.centerIn: parent
+                text: root.loginError ? "ACESSO·NEGADO" : "Bem·vindo"
+                color: "#F0EAD6"  // texto claro
+                font.pixelSize: 36
+                font.family: "EB Garamond Italic"
+                font.bold: true
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
+        }
+
+        // Mensagem de erro adicional (opcional)
+        Rectangle {
+            visible: root.loginError
+            radius: 5
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: 280
+            height: 32
+            color: "#5C4B3C"  // marrom médio escuro
+            border.color: "#A67C52"
+            border.width: 1
+
+            Text {
+                anchors.centerIn: parent
+                text: "Usuário·ou·senha·incorretos"
+                color: "#F0EAD6"
+                font.pixelSize: 14
+                font.family: "EB Garamond Italic"
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
+        }
+    }
+}
