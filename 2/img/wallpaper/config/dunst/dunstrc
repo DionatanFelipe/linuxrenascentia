@@ -1,0 +1,35 @@
+[global]
+font = monospace 10
+width = 320
+offset = (20, 20)
+origin = top-right
+padding = 10
+horizontal_padding = 10
+frame_width = 2
+corner_radius = 0
+separator_height = 2
+idle_threshold = 120
+transparency = 0
+progress_bar = true
+progress_bar_height = 10
+timeout = 5
+
+background = "#252e22"
+foreground = "#b8c0b8"
+frame_color = "#7a5a3a"
+
+[urgency_low]
+background = "#252e22"
+foreground = "#b8c0b8"
+frame_color = "#7a5a3a"
+
+[urgency_normal]
+background = "#202824"
+foreground = "#ffffff"
+frame_color = "#cd7f32"
+
+[urgency_critical]
+background = "#2a1e1a"
+foreground = "#ffffff"
+frame_color = "#c95a3a"
+timeout = 0

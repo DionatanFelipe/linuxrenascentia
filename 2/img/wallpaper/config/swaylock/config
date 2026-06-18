@@ -1,0 +1,38 @@
+# The defaults below could be overridden in $XDG_CONFIG_HOME/swaylock/config
+#  (~/.config/swaylock/config).
+#
+# Image path supports environment variables and shell expansions,
+# e.g. image=$HOME/Pictures/default.png
+#image=/usr/share/backgrounds/default.jxl
+#scaling=fill
+# SWAYLOCK - TEMA ESCURO/DOURADO FUNCIONAL
+# Fundo sólido + imagem
+# O fundo garante contraste se a imagem for clara
+# SWAYLOCK - TEMA PREMIUM ESCURO/DOURADO
+# Fundo sólido + imagem
+# SWAYLOCK - TEMA ESCURO/DOURADO PREMIUM COM ANEL DUPLO SIMULADO
+image="/home/alpha-ai/Imagens/Papéis de parede/1920px-Botticelli-primavera.jpg"
+scaling=fill
+font=DejaVu Serif
+font-size=32
+# Indicador grande
+indicator-radius=125
+indicator-thickness=14
+# Anel externo (dourado)
+ring-color=#CD7F32
+inside-color=#0A0C0E
+text-color=#F5F1E6
+# Simula anel interno mais claro (feito pelo highlight ao pressionar tecla)
+key-hl-color=#E6D1A0
+bs-hl-color=#C95A3A
+# Estado correto (senha correta) - anel duplo simulando “brilho”
+ring-ver-color=#CDD6A0
+inside-ver-color=#0A0C0E
+text-ver-color=#CDD6A0
+# Estado incorreto (senha errada)
+ring-wrong-color=#C95A3A
+inside-wrong-color=#2A1E1A
+text-wrong-color=#C95A3A
+# Linhas invisíveis
+line-color=#00000000
+separator-color=#00000000
