@@ -1,0 +1,1492 @@
+/* ============================================================
+   Linux Renascentia — Tema GTK (Versão Corrigida)
+   Fundo #0F1A14  ou mas ajustar todo o resto 0F1A12 | Bronze #cd7f32 | Texto #F2F2F2
+   Correções: Seleção unificada, menus sem borda, Firefox otimizado
+   ============================================================ */
+
+/* --- Base (fundos) -------------------------------------------- */
+@define-color bg_dark                 #0a1210;  /* fundo absoluto */
+@define-color bg_color                #0d1f1a;  /* fundo principal */
+@define-color bg_surface              #10251f;  /* cards/superfícies */
+@define-color bg_elevated             #152f27;  /* hover leve / painéis */
+
+/* --- Texto ---------------------------------------------------- */
+@define-color fg_color                #f2f4f3;
+@define-color fg_dim                  #a9b3b0;
+@define-color fg_muted                #7f8f8a;
+
+/* --- Acentos (cobre/bronze refinado) -------------------------- */
+@define-color accent_dark             #8c5a1e;
+@define-color accent_color            #c57a2d;
+@define-color accent_light            #e2a34a;
+
+/* --- Bordas & interações -------------------------------------- */
+@define-color border_color            rgba(197,122,45,0.18);
+@define-color hover_color             rgba(255, 255, 255, 0.04);
+@define-color selection_color         rgba(197,122,45,0.35);
+@define-color selection_focus_color   rgba(197,122,45,0.55);
+
+/* --- Estados ----------------------------------------------- */
+@define-color error_color             #e05a5a;
+
+/* --- Compatibilidade GTK / Firefox ---------------------------- */
+@define-color theme_base_color        #0d1f1a;
+@define-color theme_bg_color          #0a1210;
+@define-color theme_fg_color          #f2f4f3;
+@define-color theme_text_color        #f2f4f3;
+@define-color theme_selected_bg_color @selection_color;
+@define-color theme_selected_fg_color #f2f4f3;
+
+/* ============================================================
+   BASE
+   ============================================================ */
+** {
+    color:         @fg_color;
+    border-color:  rgba(184,115,51,0.25);
+    outline-color: @accent_color;
+    caret-color:   @accent_color;
+}
+
+/* ========================= */
+/* BASE LAYER (ambiente)     */
+/* ========================= */
+window,
+.background {
+    background-color: @bg_color;
+    color: @fg_color;
+}
+
+/* ========================= */
+/* SURFACES (GTK containers) */
+/* ========================= */
+.base,
+.view {
+    background-color: @bg_color;
+    color: @fg_color;
+}
+
+/* leve profundidade (IMPORTANTE) */
+*:hover {
+    background-color: rgba(184,115,51,0.06);
+}
+
+
+/* ============================================================
+   TOOLTIP
+   ============================================================ */
+tooltip {
+    background-color: @bg_surface;
+    color: @fg_color;
+
+    border: 1px solid rgba(184,115,51,0.25);
+    border-radius: 4px;
+
+    padding: 4px;
+    text-shadow: none;
+}
+
+tooltip * {
+    background-color: transparent;
+    color: @fg_color;
+
+    border: none;
+    padding: 2px 6px;
+
+    font-size: 0.9em;
+    text-shadow: none;
+}
+/* ============================================================
+   LABELS / TEXTVIEW
+   ============================================================ */
+label,
+.label {
+    color:            @fg_color;
+    background-color: transparent;
+}
+
+textview,
+textview text {
+    background-color: @bg_color;
+    color: @fg_color;
+}
+
+
+/* ============================================================
+   ENTRY
+   ============================================================ */
+entry {
+    background-color: @bg_surface;
+    color: @fg_color;
+
+    border: 1px solid rgba(184,115,51,0.25);
+    border-radius: 4px;
+
+    padding: 4px 8px;
+    caret-color: @accent_color;
+}
+
+
+
+entry:disabled {
+    color: @fg_dim;
+    background-color: @bg_surface;
+}
+
+/* Seleção de texto unificada */
+entry selection,
+textview text selection,
+label selection {
+    background-color: rgba(184,115,51,0.35);
+    color: @fg_color;
+}
+
+
+/* ============================================================
+   BOTÕES
+   ============================================================ */
+button {
+    background-color: @bg_surface;
+    color: @fg_color;
+
+    border: 1px solid rgba(184,115,51,0.25);
+    border-radius: 4px;
+
+    padding: 3px 8px;
+    min-height: 24px;
+
+    transition: all 150ms ease;
+}
+
+button:hover {
+    background-color: rgba(184,115,51,0.10);
+    border-color: rgba(184,115,51,0.45);
+}
+
+button:active,
+button:checked {
+    background-color: rgba(184,115,51,0.20);
+    border-color: rgba(184,115,51,0.6);
+}
+
+button:disabled {
+    background-color: @bg_dark;
+    color: @fg_dim;
+    border-color: rgba(90,80,60,0.3);
+}
+
+button.suggested-action {
+    background-color: rgba(184,115,51,0.85);
+    color: #0a1210;
+
+    border-color: rgba(184,115,51,0.6);
+    font-weight: bold;
+}
+
+button.suggested-action:hover {
+    background-color: rgba(224,160,74,0.9);
+}
+
+button.destructive-action {
+    background-color: rgba(161,75,75,0.25);
+    color: @fg_color;
+    border-color: rgba(161,75,75,0.5);
+}
+
+button.destructive-action:hover {
+    background-color: rgba(161,75,75,0.4);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(184,115,51,0.6);
+}
+
+button:backdrop {
+    opacity: 1;
+    background-color: @bg_dark;
+    color: @fg_dim;
+    border-color: rgba(90,80,60,0.2);
+}
+
+
+/* ============================================================
+   CONTAINERS DE LISTAS (base visual)
+   ============================================================ */
+iconview,
+treeview,
+listbox,
+list,
+listview,
+gridview,
+columnview {
+    background-color: @bg_color;
+    color: @fg_color;
+    border: none;
+}
+
+/* ============================================================
+   HEADER DO TREEVIEW
+   ============================================================ */
+treeview header button {
+    background-color: @bg_dark;
+    color: @fg_color;
+
+    border-bottom: 1px solid rgba(184,115,51,0.25);
+    font-weight: bold;
+}
+
+treeview header button:hover {
+    background-color: @bg_surface;
+    color: @accent_color;
+}
+
+/* ============================================================
+   ZEBRA STRIPING (profundidade orgânica)
+   ============================================================ */
+treeview.view:nth-child(even) {
+    background-color: rgba(16, 37, 31, 0.35);
+}
+
+/* ============================================================
+   HOVER GLOBAL (reflexo de cobre)
+   ============================================================ */
+iconview item:hover,
+treeview.view:hover,
+listbox row:hover,
+listview > row:hover,
+gridview > child:hover {
+    background-color: rgba(184,115,51,0.10);
+}
+
+/* ============================================================
+   ICONVIEW
+   ============================================================ */
+iconview item {
+    border-radius: 4px;
+    padding: 2px;
+}
+
+/* ============================================================
+   ENTRY (TODOS OS CASOS UNIFICADOS)
+   ============================================================ */
+treeview entry,
+iconview entry,
+.cell entry,
+spinbutton entry,
+combobox entry,
+filechooser .location-entry,
+dialog entry,
+messagedialog entry {
+    background-color: @bg_surface;
+    color: @fg_color;
+
+    border: 1px solid rgba(184,115,51,0.25);
+    border-radius: 4px;
+}
+
+/* ============================================================
+   FOCUS (interação física do objeto)
+   ============================================================ */
+entry:focus {
+    background-color: @bg_surface;
+    border-color: rgba(184,115,51,0.6);
+}
+
+/* ============================================================
+   BACKDROP (janela inativa)
+   ============================================================ */
+entry:backdrop {
+    background-color: @bg_dark;
+    color: @fg_dim;
+}
+
+/* ============================================================
+ /* ============================================================
+   DRAG & DROP - DESTAQUE DE DESTINO (PAINEL LATERAL)
+   Versão refinada - sutil e elegante
+   ============================================================ */
+   /*pasta selecionada verde lateral*/
+/* Estado ativo durante drag */
+placessidebar row:drop(active),
+filechooser .sidebar row:drop(active),
+.sidebar row:drop(active),
+row:drop(active) {
+    background-color: rgba(184, 115, 51, 0.08) !important; /* cobre leve */
+    border: 1px solid rgba(184, 115, 51, 0.7) !important;   /* cobre forte */
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px rgba(184, 115, 51, 0.15);   /* leve profundidade */
+    transition: all 150ms ease;
+}
+/* ============================================================
+   DRAG & DROP - DESTINO DE ITEM
+   Versão refinada - sutil e coerente
+   ============================================================ */
+
+/* Drop target durante drag ativo (sidebar) */
+placessidebar row.dnd,
+filechooser .sidebar row.dnd,
+.sidebar row.dnd {
+    background-color: rgba(184, 115, 51, 0.06); /* cobre suave */
+    border-left: 2px solid rgba(184, 115, 51, 0.5);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+/* Hover/seleção em item que pode receber */
+placessidebar row:selected:focus,
+filechooser .sidebar row:selected:focus,
+placessidebar row:hover:active {
+    background-color: rgba(184, 115, 51, 0.12); /* leve destaque */
+    border-left: 2px solid @accent_color;
+}
+
+/* Animação sutil de borda pulsante */
+@keyframes drop-pulse-subtle {
+    0%   { border-color: rgba(184, 115, 51, 0.5); }
+    50%  { border-color: rgba(184, 115, 51, 0.8); }
+    100% { border-color: rgba(184, 115, 51, 0.5); }
+}
+
+placessidebar row:drop(active) {
+    animation: drop-pulse-subtle 1.2s infinite;
+}
+
+/* Treeview / iconview - área principal de drop */
+treeview.view:drop(active),
+iconview:drop(active) {
+    background-color: rgba(184, 115, 51, 0.06);
+    border: 1px solid rgba(184, 115, 51, 0.5);
+    border-radius: 2px;
+}
+
+/* Item específico dentro da treeview */
+treeview.view row:drop(active),
+treeview.view .dnd-row {
+    background-color: rgba(184, 115, 51, 0.1);
+    border-left: 2px solid rgba(184, 115, 51, 0.7);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+/* Suporte GTK4 - columnview / listview / gridview */
+columnview row:drop(active),
+listview row:drop(active),
+gridview child:drop(active) {
+    background-color: rgba(184, 115, 51, 0.08);
+    outline: 1px solid rgba(184, 115, 51, 0.6);
+    outline-offset: -1px;
+    border-radius: 2px;
+}
+
+
+
+/* ============================================================
+   SELEÇÃO UNIFICADA - Regra Mestra
+   Mantém coerência visual para todos os widgets de seleção
+   ============================================================ */
+
+/* Itens selecionados */
+iconview item:selected,
+iconview item:selected:focus,
+treeview.view:selected,
+treeview.view:selected:focus,
+treeview.view:selected:hover,
+listbox row:selected,
+listbox row:selected:focus,
+listview > row:selected,
+listview > row:selected:focus,
+gridview > child:selected,
+gridview > child:selected:focus,
+flowboxchild:selected,
+flowboxchild:selected:focus,
+row:selected,
+row:selected:focus {
+    background-color: rgba(35, 110, 75, 0.55); /* Verde interior do menu selecionado */
+    color:            @fg_color;
+    outline:          none;
+    box-shadow:       inset 0 0 0 1px @accent_color; /* Detalhe cobre */
+    border-radius:    4px;
+}
+
+/* Foco mais intenso quando widget ativo */
+iconview item:selected:focus,
+treeview.view:selected:focus,
+listbox row:selected:focus,
+listview > row:selected:focus,
+gridview > child:selected:focus,
+flowboxchild:selected:focus {
+    background-color: @selection_focus_color; /* Verde mais vivo */
+}
+
+/* Labels dentro de itens selecionados */
+iconview item:selected label,
+iconview item:selected:focus label,
+treeview.view:selected label,
+listbox row:selected label,
+listview > row:selected label,
+gridview > child:selected label,
+flowboxchild:selected label,
+row:selected label {
+    background-color: transparent; /* Mantém consistência */
+    color:            @fg_color;  /* Cor anterior ao menu selecionado */
+}
+
+/* Rubber-band (seleção por arrasto) */
+rubberband,
+.rubberband {
+    background-color: rgba(46, 139, 87, 0.30); /* Verde suave translúcido */
+    border:           1px solid rgba(46, 139, 87, 0.85);
+    border-radius:    2px;
+}
+
+/* Seleção global GTK */
+selection,
+:selected {
+    background-color: @selection_color; /* Verde padrão do tema */
+    color:            @fg_color;
+}
+
+/* ============================================================
+   MENUS - CORRIGIDO (sem borda no hover)
+   ============================================================ */
+
+/* ============================================================
+   MENUS - CORRIGIDO (sem borda no hover e sem sobreposição em submenus)
+   ============================================================ */
+/* ============================================================
+   MENUBAR & MENUS
+   Estilo elegante inspirado em cobre e tons escuros
+   ============================================================ */
+
+/* Barra principal */
+menubar {
+    background-color: @bg_dark;  /* fundo escuro consistente */
+    color:            @fg_color;
+    border-bottom:    1px solid @border_color;
+}
+
+/* Menus principais */
+menu,
+.menu {
+    background-color: @bg_dark;
+    color:            @fg_color;
+    border:           1px solid @border_color;
+    border-radius:    8px;
+    padding:          8px 0;
+}
+
+/* Submenus: removendo bordas sobrepostas, mantendo sombra elegante */
+menu menu,
+.menu menu {
+    margin: -1px 0 0 -1px;             /* evita borda dupla */
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* leve profundidade */
+}
+
+/* Submenu refinado - apenas borda sutil, sem conflitar */
+menu menu:first-child,
+.menu menu:first-child {
+    border: 1px solid @border_color;
+    border-top: none;
+    margin-top: -1px;
+}
+
+/* Itens de menu */
+menuitem {
+    background-color: transparent;
+    color:            @fg_color;
+    padding:          3px 8px;
+    min-height:       22px;
+}
+
+/* Hover elegante sem borda */
+menuitem:hover {
+    background-color: rgba(220, 200, 160, 0.13); /* cobre suave translúcido */
+}
+
+/* Hover em submenu mantém alinhamento */
+menuitem:hover > menu,
+menuitem:hover > .menu {
+    margin-top: -1px;
+}
+
+/* Itens desativados */
+menuitem:disabled {
+    color:            @fg_dim;
+    opacity:          0.5;
+    background-color: transparent;
+}
+
+menuitem:disabled:hover,
+menuitem:disabled:active {
+    background-color: transparent;
+}
+
+/* Separadores */
+menu separator {
+    background-color: @border_color;
+    min-height:       1px;
+    margin:           4px 0;
+}
+
+/* Seta de submenu */
+menuitem arrow {
+    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+    color:            @accent_color; /* cobre vivo */
+    min-width:        10px;
+    min-height:       10px;
+    margin-left:      auto;
+    opacity:          1;
+}
+
+/* ============================================================
+   POPOVER - Estilo elegante e legível
+   ============================================================ */
+
+/* Hover e ativo em itens de popover */
+popover modelbutton:hover,
+popover row:hover,
+menu modelbutton:hover,
+modelbutton:active,
+row:active {
+    background-color: @hover_color; /* verde/cobre suave, consistente */
+}
+
+popover modelbutton:checked,
+popover row:checked {
+    background-color: rgba(205,127,50,0.25) !important; /* cobre translúcido */
+}
+
+/* ============================================================
+   POPOVER BASE
+   ============================================================ */
+
+popover.background {
+    background-color: @bg_dark;     /* fundo escuro */
+    color:            @fg_color;    /* texto principal legível */
+    border:           1px solid @border_color;
+    border-radius:    10px;
+    box-shadow:       0 4px 12px rgba(0,0,0,0.35); /* leve profundidade */
+    padding:          6px;
+}
+
+popover.background.menu {
+    padding: 6px 0;
+}
+
+/* Botões internos dos popovers GNOME */
+popover modelbutton {
+    background-color: transparent;
+    color:            @fg_color;
+    border-radius:    6px;
+    padding:          6px 10px;
+    min-height:       24px;
+    transition:       all 150ms ease; /* animação suave */
+}
+
+/* Hover */
+popover modelbutton:hover {
+    background-color: @hover_color;
+    color:            @fg_color;
+}
+
+/* Active */
+popover modelbutton:active {
+    background-color: rgba(205,127,50,0.22); /* cobre translúcido suave */
+}
+
+/* Disabled */
+popover modelbutton:disabled {
+    color:   @fg_dim;
+    opacity: 0.5;
+}
+
+/* Separadores */
+popover separator {
+    background-color: @border_color;
+    min-height:       1px;
+    margin:           4px 0;
+}
+
+/* CSD (client-side decorations) popovers */
+.csd popover.background {
+    border-radius: 12px; /* ligeiramente mais arredondado */
+}
+
+/* ============================================================
+   HEADER BAR
+   ============================================================ */
+headerbar,
+.titlebar {
+    background-color: @bg_dark;      /* fundo escuro consistente */
+    color:            @fg_color;     /* texto principal legível */
+    border-bottom:    1px solid @accent_color; /* cobre vivo */
+    padding:          4px 8px;
+}
+
+/* Título e subtítulo */
+headerbar .title {
+    color:       @fg_color;
+    font-weight: bold;
+}
+
+headerbar .subtitle {
+    color:     @fg_dim;   /* menos destacado que o título */
+    font-size: 0.85em;
+}
+
+/* ============================================================
+   NOTEBOOK / ABAS
+   ============================================================ */
+notebook header,
+notebook > header {
+    background-color: @bg_dark;
+    border-bottom:    1px solid @border_color;
+}
+
+/* Aba padrão */
+notebook tab {
+    background-color: @bg_dark;
+    color:            @fg_dim;
+    padding:          6px 14px;
+    border:           1px solid transparent;
+    border-radius:    4px 4px 0 0;
+    margin-right:     2px;
+    transition:       all 150ms ease; /* hover suave */
+}
+
+/* Hover em aba */
+notebook tab:hover {
+    background-color: @bg_light;      /* leve destaque */
+    color:            @fg_color;
+}
+
+/* Aba selecionada */
+notebook tab:checked {
+    background-color:    @bg_color;       /* contraste suave com bg_dark */
+    color:               @accent_color;   /* cobre dominante */
+    border-color:        @border_color;
+    border-bottom-color: @bg_color;       /* remove linha de separação com conteúdo */
+}
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+scrollbar {
+    background-color: @bg_dark;       /* fundo do track */
+    border-radius: 6px;
+}
+
+/* Slider / thumb */
+scrollbar slider {
+    background-color: rgba(46, 74, 54, 0.8); /* verde escuro suave */
+    border-radius:    6px;
+    min-width:        6px;
+    min-height:       6px;
+    transition:       all 150ms ease;        /* animação sutil */
+}
+
+/* Hover sobre o slider */
+scrollbar slider:hover {
+    background-color: rgba(205,127,50,0.45); /* cobre mais suave */
+}
+
+/* Slider ativo */
+scrollbar slider:active {
+    background-color: @accent_color; /* cobre vivo */
+}
+/* ============================================================
+   CHECKBOX / RADIO / SWITCH
+   ============================================================ */
+checkbutton,
+radiobutton {
+    color:            @fg_color;
+    background-color: transparent;
+}
+
+/* Box / Circle base */
+check,
+radio {
+    background-color: @bg_light;
+    border:           1px solid @accent_color;
+    border-radius:    3px;
+    min-width:        12px;
+    min-height:       12px;
+    padding:          0;
+    margin:           0 4px 0 0;
+    color:            @fg_color;
+    transition:       all 120ms ease;
+}
+
+/* Marcado */
+check:checked,
+radio:checked {
+    background-color: @accent_color;
+    border-color:     @accent_dark;
+    color:            @bg_dark;
+}
+
+/* Hover */
+check:hover,
+radio:hover {
+    border-color: @accent_color;
+}
+
+/* Switch */
+switch {
+    background-color: @bg_dark;
+    border:           1px solid @border_color;
+    border-radius:    14px;
+    min-width:        36px;
+    min-height:       16px;
+    transition:       all 120ms ease;
+}
+
+/* Switch ativo */
+switch:checked {
+    background-color: @accent_color;
+    border-color:     @accent_dark;
+}
+
+/* Slider interno do switch */
+switch slider {
+    background-color: @fg_dim;
+    border-radius:    12px;
+    transition:       all 120ms ease;
+}
+
+switch:checked slider {
+    background-color: @bg_dark;
+}
+
+/* Trilha da barra de progresso ou escala (fundo) */
+progressbar trough,
+scale trough {
+    background-color: @bg_dark;   /* Fundo escuro consistente com o tema */
+    border-radius:    4px;        /* Cantos levemente arredondados */
+    border:           1px solid @border_color; /* Delineamento sutil */
+}
+
+/* Parte preenchida da barra de progresso / highlight do scale */
+progressbar progress,
+scale highlight {
+    background-color: @accent_color; /* Cobre vivo do tema */
+    border-radius:    4px;           /* Arredondamento igual à trilha */
+}
+
+/* Slider do scale (círculo que se move) */
+scale slider {
+    background-color: @accent_color; /* Cobre para destaque */
+    border-radius:    50%;           /* Totalmente circular */
+    min-width:        14px;          /* Tamanho mínimo para clique confortável */
+    min-height:       14px;
+}
+
+/* Slider quando o mouse está sobre ele */
+scale slider:hover {
+    background-color: @accent_light; /* Cobre mais claro ao passar o mouse */
+}
+
+/* ============================================================
+   SPINBUTTON / COMBOBOX - Ajuste de hover uniforme
+   ============================================================ */
+spinbutton {
+    background-color: @bg_dark;
+    color:            @fg_color;
+    border:           1px solid @border_color;
+    border-radius:    4px;
+}
+
+spinbutton button {
+    background-color: transparent;
+    border: none;
+}
+
+/* Hover uniforme para spinbutton e combobox */
+spinbutton button:hover,
+combobox button:hover {
+    background-color: rgba(205,127,50,0.25); /* cobre translúcido */
+    border-color:     @accent_color;          /* borda cobre ao passar o mouse */
+}
+
+combobox,
+combobox button {
+    background-color: @bg_dark;
+    color:            @fg_color;
+    border:           1px solid @border_color;
+    border-radius:    4px;
+}
+
+
+/* ============================================================
+   FRAME / STATUSBAR
+   ============================================================ */
+frame {
+    border:           1px solid @border_color;
+    border-radius:    3px;
+    padding:          2px;
+    margin:           6px;
+    background-color: @bg_dark;
+    box-shadow:       0 2px 8px rgba(0,0,0,0.35);
+}
+
+frame > label {
+    color:       @accent_color;
+    font-weight: bold;
+    padding:     0 4px;
+}
+
+frame.statusbar,
+frame > statusbar {
+    background-color: @bg_dark;
+    color:            @fg_dim;
+    border-top:       1px solid @border_color;
+    padding:          2px 8px;
+    font-size:        0.85em;
+}
+
+
+
+
+
+/* =====================================================
+   RINASCIMENTO TECNICO - ALTA PRECISÃO
+   Paleta: Negro absoluto, azul noturno, dourado queimado, cobre envelhecido
+   Sem degradês agressivos, apenas sutileza 90-100%
+   Sombra que faz flutuar como instrumento sobre bancada
+   ===================================================== */
+
+/* --- ELIMINAÇÃO TOTAL DA HERANÇA GTK --- */
+/* =========================================================
+   CORREÇÃO - FUNDO SÓ NA JANELA, NÃO NOS WIDGETS INTERNOS
+   ========================================================= */
+
+/* ============================================================
+   JANELAS CSD PRINCIPAIS (não popup, não dialog)
+   ============================================================ */
+window.csd:not(.popup):not(.dialog) {
+    border: 1px solid @accent_color;             /* cobre vivo */
+    border-radius: 0;                             /* mantém canto reto */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);      /* sombra elegante */
+    background-clip: padding-box;                /* evita overflow da borda */
+    transition: all 150ms ease;
+}
+
+/* Fundo interno da janela CSD */
+window.csd:not(.popup):not(.dialog) > .background {
+    background-color: @bg_color;                 /* fundo escuro consistente */
+    border-radius: 0;                             /* canto reto */
+    color: @fg_color;                             /* texto legível */
+}
+
+/* Hover/Focus da janela (opcional para efeito sutil) */
+window.csd:not(.popup):not(.dialog):hover {
+    box-shadow: 0 6px 16px rgba(205,127,50,0.25); /* cobre suave ao redor */
+    border-color: rgba(205,127,50,0.9);           /* destaque do cobre vivo */
+}
+/* ============================================================
+   DIÁLOGOS / MENSAGENS
+   ============================================================ */
+
+/* Estrutura principal dos diálogos */
+dialog,
+messagedialog,
+.dialog,
+window.dialog,
+window.messagedialog {
+    background-color: @bg_dark;                  /* fundo escuro */
+    border: 1px solid @accent_color;             /* cobre vivo */
+    border-radius: 0;                             /* cantos retos */
+    box-shadow: 
+        0 12px 32px -8px rgba(0,0,0,0.8),
+        0 4px 12px -4px rgba(0,0,0,0.5),
+        inset 0 1px 0 rgba(255,255,255,0.03);
+}
+
+/* Headerbar dos diálogos - versão limpa */
+dialog headerbar,
+messagedialog headerbar,
+dialog .titlebar,
+messagedialog .titlebar,
+window.dialog headerbar {
+    background-color: @bg_dark;
+    border-bottom: 1px solid @border_color;
+    border-radius: 0;                             /* canto reto */
+    padding: 8px 12px;
+    min-height: 36px;
+    box-shadow: none;
+    background-clip: padding-box;
+    overflow: hidden;
+}
+
+/* Títulos e subtítulos */
+dialog headerbar .title,
+messagedialog headerbar .title,
+dialog .titlebar .title {
+    color: @fg_color;
+    font-weight: normal;
+    font-size: 1em;
+}
+dialog headerbar .subtitle,
+messagedialog headerbar .subtitle { display: none; }
+
+/* Conteúdo do diálogo - fundo novo, sem herança GTK */
+dialog .dialog-content,
+messagedialog .dialog-content,
+dialog .message-dialog-content,
+messagedialog .message-dialog-content,
+dialog box.content,
+messagedialog box.content,
+dialog .contents,
+messagedialog .contents {
+    background-color: #0B0E10 !important;        /* fundo profundo */
+    border-left: 1px solid rgba(198,139,60,0.1);
+    border-right: 1px solid rgba(198,139,60,0.1);
+    padding: 20px 22px;
+}
+
+/* Labels e texto */
+dialog label,
+messagedialog label,
+dialog .message-dialog-body label,
+messagedialog .message-dialog-body label {
+    color: #C8C0B0 !important;                  /* papel envelhecido */
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+/* Texto secundário */
+dialog .message-dialog-secondary-text,
+messagedialog .message-dialog-secondary-text {
+    color: #7A7062 !important;
+    font-size: 0.85em;
+}
+
+/* Ícones do diálogo */
+dialog .message-dialog-icon-area,
+messagedialog .message-dialog-icon-area {
+    background: transparent;
+    padding: 6px 12px 6px 18px;
+}
+
+/* Área interna do corpo do diálogo */
+dialog .message-dialog-body,
+messagedialog .message-dialog-body {
+    background: transparent;
+    padding: 6px 18px 6px 6px;
+}
+
+/* Área de botões */
+dialog .dialog-action-area,
+messagedialog .dialog-action-area {
+    background-color: @bg_dark !important;
+    border-top: 1px solid #1E1C18;              /* separador sutil */
+    border-radius: 0 0 7px 7px;
+    padding: 12px 18px;
+}
+
+/* Botões internos do diálogo */
+dialog button,
+messagedialog button {
+    background-color: #1A1C1E !important;       /* latão escovado */
+    background-image: none !important;
+}
+
+/* Entradas de texto */
+dialog entry,
+messagedialog entry {
+    background-color: #060809 !important;
+    border: 1px solid #2A2822 !important;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 6px 0;
+    color: #D0C8B8 !important;
+    caret-color: @accent_color;
+}
+dialog entry:focus,
+messagedialog entry:focus {
+    border-color: @accent_color !important;
+    box-shadow: 0 0 0 2px rgba(198,139,60,0.2);
+}
+
+/* Árvores e listas internas */
+dialog treeview,
+messagedialog treeview,
+dialog list,
+messagedialog list,
+dialog .view,
+messagedialog .view {
+    background-color: #080A0C !important;
+    color: #C0B8A8 !important;
+}
+dialog treeview:selected,
+messagedialog treeview:selected,
+dialog list row:selected,
+messagedialog list row:selected {
+    background-color: #1A2018 !important;
+    color: #F0E8D8 !important;
+}
+
+/* Scrollbars sutis */
+dialog scrollbar,
+messagedialog scrollbar {
+    background-color: #060808 !important;
+}
+dialog scrollbar slider,
+messagedialog scrollbar slider {
+    background-color: #2A2820 !important;
+    border-radius: 4px;
+}
+dialog scrollbar slider:hover,
+messagedialog scrollbar slider:hover {
+    background-color: @accent_color !important;
+}
+
+/* Separadores e abas */
+dialog separator,
+messagedialog separator {
+    background-color: #2A2820;
+    min-height: 1px;
+    margin: 12px 0;
+}
+dialog notebook tab,
+messagedialog notebook tab {
+    background-color: #0A0C0E !important;
+    border: 1px solid #2A2820 !important;
+    border-bottom: none !important;
+    border-radius: 5px 5px 0 0;
+    padding: 7px 16px;
+    color: #9A9080 !important;
+}
+dialog notebook tab:checked,
+messagedialog notebook tab:checked {
+    background-color: #0E1114 !important;
+    border-color: @accent_color !important;
+    border-bottom: 2px solid @accent_color !important;
+    color: #D8D0C0 !important;
+}
+
+/* ============================================================
+   BOTÕES EM DIÁLOGOS
+   ============================================================ */
+
+/* Botões normais dentro de diálogos */
+dialog .dialog-action-area button,
+messagedialog .dialog-action-area button,
+dialog button,
+messagedialog button {
+    background-color: #111b18;                      /* fundo escuro profundo */
+    color: rgba(220,235,230,0.95);                 /* texto levemente envelhecido */
+    border: 1px solid rgba(255,255,255,0.18) !important;
+    padding: 6px 14px;
+    margin: 0 6px;
+    border-radius: 3px;
+    transition: all 150ms ease;
+}
+
+/* Hover para botões normais */
+dialog .dialog-action-area button:hover,
+messagedialog .dialog-action-area button:hover {
+    background-color: #1f2f29;                     /* fundo ligeiramente iluminado */
+    border: 1px solid rgba(255,255,255,0.35) !important;
+    color: #ffffff;                                /* texto claro no hover */
+}
+
+/* Botões de ação sugerida (destacados) */
+dialog .dialog-action-area button.suggested-action,
+messagedialog .dialog-action-area button.suggested-action {
+    background-color: #1a1410;                     /* cobre escuro */
+    color: #f0c090;                                /* latão envelhecido */
+    border: 1px solid rgba(230,170,110,0.95) !important;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+/* Hover / focus / active para ação sugerida */
+dialog .dialog-action-area button.suggested-action:hover,
+messagedialog .dialog-action-area button.suggested-action:hover,
+dialog .dialog-action-area button.suggested-action:focus,
+messagedialog .dialog-action-area button.suggested-action:focus,
+dialog .dialog-action-area button.suggested-action:active,
+messagedialog .dialog-action-area button.suggested-action:active {
+    background-color: #2a1d14;                     /* cobre mais iluminado no hover */
+    border: 1px solid rgba(255,210,140,1) !important; /* borda mais brilhante */
+    color: #ffe6c8;                                /* texto iluminado */
+    box-shadow: 
+        0 0 10px rgba(220,150,80,0.6), 
+        0 0 18px rgba(255,190,120,0.35);          /* efeito metálico sutil */
+}
+
+
+/* ============================================================
+   FIREFOX ESPECÍFICO (SIMPLIFICADO)
+   ============================================================ */
+window:not(.background) > headerbar,
+window > headerbar:first-child,
+dialog headerbar,
+messagedialog headerbar,
+.dialog-headerbar,
+modal-dialog headerbar {
+    background-color: #0a1210 !important;
+    color:            #F2F2F2 !important;
+    border-bottom:    2px solid #cd7f32 !important;
+    border-radius:    0px !important;
+    border-top:       none !important;
+    border-left:      none !important;
+    border-right:     none !important;
+    padding:          8px 12px !important;
+    margin:           0px !important;
+}
+
+window > dialog,
+window > dialog headerbar,
+#MozillaGtkWidget > widget,
+#MozillaGtkWidget dialog,
+#MozillaGtkWidget headerbar {
+    background-color: #0a1210 !important;
+    border-radius:    0px !important;
+}
+
+window:not(.background) {
+    background-color: #0F1A14;
+}
+
+
+/* ============================================================
+   FILE CHOOSER ()
+   ============================================================ */
+filechooser,
+.filechooser {
+    background-color: @bg_color;
+    color:            @fg_color;
+    border:           1px solid @accent_color;
+    border-radius:    6px;
+}
+
+filechooser headerbar,
+filechooser .titlebar {
+    background-color: @bg_dark;
+    border-bottom:    1px solid @accent_color;
+    border-radius:    6px 6px 0 0;
+    border-top:       none;
+    border-left:      none;
+    border-right:     none;
+    padding:          6px 12px;
+}
+
+filechooser .sidebar,
+filechooser placessidebar,
+placessidebar {
+    background-color: @bg_dark;
+    border-right:     1px solid @border_color;
+    border-radius:    0;
+}
+
+filechooser .sidebar row,
+placessidebar row {
+    background-color: transparent;
+    color:            @fg_color;
+    padding:          4px 8px;
+    border:           none;
+}
+
+filechooser .sidebar row image,
+placessidebar row image {
+    margin-right: 10px;
+}
+
+filechooser .sidebar row label,
+placessidebar row label {
+    margin-left: 0px;
+}
+
+filechooser .sidebar row:hover,
+placessidebar row:hover {
+    background-color: @hover_color;
+}
+
+ filechooser .sidebar row:selected,
+placessidebar row:selected {
+    background-color: @selection_color;
+    color:            @fg_color;
+} talvez pasta firefox
+
+
+filechooser .view,
+filechooser treeview,
+filechooser iconview {
+    background-color: @bg_color;
+    color:            @fg_color;
+    border:           none;
+}
+
+
+
+
+filechooser .path-bar,
+filechooser .location-entry {
+    background-color: @bg_dark;
+    border:           1px solid @border_color;
+    border-radius:    4px;
+    color:            @fg_color;
+    padding:          2px;
+}
+
+filechooser .path-bar button {
+    padding:     2px 4px;
+    min-height:  0;
+    margin:      0;
+}
+
+filechooser .path-bar button:hover {
+    background-color: @hover_color;
+}
+
+filechooser entry {
+    padding: 6px 10px;
+}
+
+/* Botões do filechooser */
+filechooser .dialog-action-area button {
+    background-image: none;
+    background-color: @bg_color;
+    color:            @fg_color;
+    border:           1px solid @border_color;
+}
+
+filechooser .dialog-action-area button:hover {
+    background-color: @hover_color;
+}
+
+filechooser .dialog-action-area button:backdrop {
+    background-color: @bg_color;
+    color:            shade(@fg_color, 0.8);
+    opacity:          1;
+}
+
+/* ============================================================
+   FILE CHOOSER - UNIFICA BARRA SUPERIOR
+   ============================================================ */
+
+filechooser .location-toolbar {
+    background-color: @bg_dark;
+    border-bottom: 1px solid @border_color;
+    padding: 6px 12px;
+}
+
+filechooser .location-toolbar > box {
+    spacing: 8px;
+}
+
+filechooser .location-toolbar button {
+    padding: 4px 10px;
+    min-width: 28px;
+    min-height: 28px;
+}
+
+filechooser .path-bar {
+    background-color: @bg_dark;
+    border: 1px solid @border_color;
+    border-radius: 4px;
+    padding: 0;
+}
+
+filechooser .path-bar button {
+    padding: 4px 8px;
+    background: transparent;
+    border: none;
+    margin: 0;
+}
+
+filechooser .path-bar .entry {
+    background-color: @bg_dark;
+    border: none;
+    padding: 4px 8px;
+}
+
+filechooser .search-toggle {
+    padding: 4px 10px;
+}
+
+/* ============================================================
+   FILE CHOOSER - CABEÇALHOS DAS COLUNAS
+   ============================================================ */
+
+filechooser treeview header {
+    background-color: @bg_dark;
+    border: none;
+    border-bottom: 1px solid @border_color;
+}
+
+filechooser treeview header button {
+    background-color: @bg_dark;
+    color: @fg_color;
+    padding: 6px 10px;
+    margin: 0;
+    border: none;
+    border-right: 1px solid @border_color;
+    border-radius: 0;
+    font-weight: bold;
+    background-image: none;
+    box-shadow: none;
+}
+
+filechooser treeview header button:last-child {
+    border-right: none;
+}
+
+filechooser treeview header button:hover {
+    background-color: @hover_color;
+    color: @accent_color;
+}
+
+filechooser treeview.view cell {
+    padding: 4px 8px;
+}
+
+filechooser treeview.view:selected {
+    background-color: @selection_color;
+    color: @fg_color;
+}
+
+/* ============================================================
+   FILE CHOOSER - BARRA DE CAMINHO COM BORDA
+   ============================================================ */
+
+/* Borda ao redor da barra de caminho */
+filechooser .path-bar {
+    background-color: @bg_dark;
+    border: 1px solid @border_color;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+/* Botões dentro da barra de caminho (usuario, Downloads, Nova Pasta) */
+filechooser .path-bar button {
+    padding: 4px 8px;
+    background: transparent;
+    border: none;
+    margin: 0;
+    border-radius: 3px;
+}
+
+filechooser .path-bar button:hover {
+    background-color: @hover_color;
+    border-radius: 3px;
+}
+
+/* Separador entre os botões (a setinha /) */
+filechooser .path-bar button + button::before {
+    content: "›";
+    color: @accent_color;
+    margin: 0 4px;
+}
+
+
+/* ============================================================
+   PANED (SEPARADOR THUNAR)
+   ============================================================ */
+paned > separator,
+paned separator {
+    -gtk-icon-source: none;
+    background-color: transparent;
+    border:           none;
+    outline:          none;
+    min-width:        3px;
+    max-width:        3px;
+    margin:           0;
+    background-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(205,127,50,0.8) 48%,
+        rgba(205,127,50,0.6) 55%,
+        rgba(205,127,50,1.0) 60%,
+        rgba(205,127,50,0.6) 65%,
+        rgba(205,127,50,0.15) 90%,
+        transparent 100%
+    );
+}
+
+/* PANED SEPARADOR - hover sutil com brilho */
+paned separator:hover {
+    -gtk-icon-source: none;
+    background-color: transparent;
+    border:           none;
+    outline:          none;
+    min-width:        3px;
+    max-width:        3px;
+    margin:           0;
+    background-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(205,127,50,0.9) 45%,   /* leve aumento na opacidade */
+        rgba(205,127,50,0.75) 55%,  /* central dourada mais intensa */
+        rgba(205,127,50,1.0) 60%,
+        rgba(205,127,50,0.75) 65%,
+        rgba(205,127,50,0.2) 90%,   /* sutil halo suave */
+        transparent 100%
+    );
+    box-shadow: 0 0 6px rgba(205,127,50,0.15); /* brilho discreto ao redor */
+}
+
+/* paned separator:hover {
+    background-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(205,127,50,0.3) 20%,
+        @accent_color 50%,
+        rgba(205,127,50,0.3) 80%,
+        transparent 100%
+    );
+}
+*/
+
+/* ============================================================
+   SPINNER
+   ============================================================ */
+spinner {
+    color:            transparent;
+    background-color: transparent;
+    border:           none;
+    outline:          none;
+}
+
+spinner:active {
+    color: @accent_color;
+}
+
+
+/* ============================================================
+   FOCO UNIFICADO E LINKS (POPUP, DIALOG, FILECHOOSER)
+   ============================================================ */
+
+/* Links globais */
+*:link, dialog *:link, messagedialog *:link, filechooser *:link, popover *:link {
+    color: @accent_light;
+}
+*:visited, dialog *:visited, messagedialog *:visited, filechooser *:visited, popover *:visited {
+    color: @accent_dark;
+}
+
+/* Contorno de foco global */
+*:focus, dialog *:focus, messagedialog *:focus, filechooser *:focus, popover *:focus {
+    outline: 2px solid @accent_color;
+    outline-offset: 1px;
+}
+
+/* Remover contorno em elementos que já possuem estilo próprio */
+entry:focus, button:focus, treeview:focus, iconview:focus,
+dialog entry:focus, dialog button:focus,
+messagedialog entry:focus, messagedialog button:focus,
+filechooser entry:focus, filechooser button:focus,
+popover modelbutton:focus {
+    outline: none;
+}
+
+/* Hover de links (uniforme) */
+*:hover, dialog *:hover, messagedialog *:hover, filechooser *:hover, popover *:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

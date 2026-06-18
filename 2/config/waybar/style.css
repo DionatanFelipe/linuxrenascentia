@@ -1,0 +1,179 @@
+* {
+    font-family: "Inter", "Crimson Pro", "Junicode", "Font Awesome", "Symbols Nerd Font", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* --- WINDOW / BASE -------------------------------------------- */
+window#waybar {
+    background-color: rgba(13, 31, 26, 0.92);
+    color: #f2f4f3;
+    border-bottom: 2px solid rgba(184,115,51,0.15);
+    transition-property: background-color;
+    transition-duration: .4s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* --- BUTTONS -------------------------------------------------- */
+button {
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+button:hover {
+    background-color: rgba(184,115,51,0.08);
+}
+
+/* --- WORKSPACES ----------------------------------------------- */
+#workspaces button {
+    color: #a9b3b0;
+    padding: 0 12px;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+    background: rgba(184,115,51,0.08);
+}
+
+#workspaces button.focused {
+    background-color: rgba(184,115,51,0.25); /*18*/
+    color: #f2f4f3;
+    border: 1px solid rgba(184,115,51,0.25);
+}
+
+#workspaces button.urgent {
+    background-color: rgba(161,75,75,0.25);
+    color: #f2f4f3;
+    border: 1px solid rgba(161,75,75,0.4);
+}
+
+#workspaces button:not(.focused):not(.urgent) {
+    background-color: rgba(16, 37, 31, 0.5);
+    color: #7f8f8a;
+}
+
+/* --- MODE ----------------------------------------------------- */
+#mode {
+    background-color: rgba(16, 37, 31, 0.8);
+    border-bottom: 2px solid rgba(184,115,51,0.4);
+    color: #c9a24a;
+}
+
+/* --- GLOBAL MODULE STYLE ------------------------------------- */
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#tray,
+#idle_inhibitor,
+#scratchpad,
+#mpd,
+#language,
+#keyboard-state > label,
+#custom-power {
+    padding: 0 10px;
+    border-radius: 3px;
+    background-color: rgba(16, 37, 31, 0.75);
+    color: #f2f4f3;
+    border: 1px solid rgba(184,115,51,0.15);/*borda 15*/
+}
+
+/* --- CLOCK (peça central) ------------------------------------ */
+#clock {
+    font-family: "Crimson Pro";
+    font-weight: 600;
+    background-color: rgba(21, 47, 39, 0.9);
+    border: 1px solid rgba(184,115,51,0.25);/*borda 25*/
+}
+
+/* --- BATTERY -------------------------------------------------- */
+#battery.charging,
+#battery.plugged {
+    color: #6fae8a;
+}
+
+#battery.critical:not(.charging) {
+    background-color: rgba(161,75,75,0.25);
+    border: 1px solid rgba(161,75,75,0.5);
+    animation: blink 0.6s linear infinite alternate;
+}
+
+@keyframes blink {
+    to {
+        opacity: 0.6;
+    }
+}
+
+/* --- NETWORK -------------------------------------------------- */
+#network.disconnected {
+    background-color: rgba(161,75,75,0.25);
+    border: 1px solid rgba(161,75,75,0.5);
+}
+
+/* --- AUDIO ---------------------------------------------------- */
+#pulseaudio.muted,
+#wireplumber.muted {
+    background-color: rgba(161,75,75,0.25);
+    border: 1px solid rgba(161,75,75,0.5);
+}
+
+/* --- TEMPERATURE --------------------------------------------- */
+#temperature.critical {
+    background-color: rgba(161,75,75,0.25);
+    border: 1px solid rgba(161,75,75,0.5);
+}
+
+/* --- IDLE ----------------------------------------------------- */
+#idle_inhibitor.activated {
+    color: #6fae8a;
+}
+
+/* --- SCRATCHPAD ---------------------------------------------- */
+#scratchpad {
+    background-color: rgba(16, 37, 31, 0.4);
+    color: #a9b3b0;
+}
+
+#scratchpad:not(.empty) {
+    background-color: rgba(184,115,51,0.18);
+    color: #f2f4f3;
+}
+
+/* --- POWER ---------------------------------------------------- */
+#custom-power:hover {
+    background-color: rgba(161,75,75,0.25);
+    border: 1px solid rgba(161,75,75,0.5);
+}
+
+/* --- TRAY ----------------------------------------------------- */
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    background-color: rgba(161,75,75,0.25);
+    border: 1px solid rgba(161,75,75,0.5);
+}
+
+/* --- LAYOUT SPACING ------------------------------------------ */
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+/*--- Keybord State --------------------------------------------*/
+
+
+#keyboard-state > label.locked {
+    color: #6fae8a;
+}
