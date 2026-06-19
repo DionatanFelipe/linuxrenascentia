@@ -54,6 +54,9 @@
 ![Preview](captura/rofi.png)
 ![Preview](captura/desl.png)
 
+ROFI 2.0
+
+![Preview](captura/rof20.png)
 
 ---
 
@@ -169,28 +172,29 @@ cd Linux-Renascentia
 Ou
 
 ```bash
-git clone https://github.com/tu-usuario/Linux-Renascentia.git
+git clone https://github.com/DionatanFelipe/linuxrenascentia.git
 cd Linux-Renascentia
 ```
-```
+
+
 
 ### 3. Instalar as configurações do Sway
 
 Copie as pastas para `~/.config/`:
 
 ```bash
-cp -r Linux-Renascentia/.config/dunst ~/.config/
-cp -r Linux-Renascentia/.config/foot ~/.config/
-cp -r Linux-Renascentia/.config/rofi ~/.config/
-cp -r Linux-Renascentia/.config/sway ~/.config/
-cp -r Linux-Renascentia/.config/swaylock ~/.config/
-cp -r Linux-Renascentia/.config/waybar ~/.config/
+cp -r Linux-Renascentia/config/dunst ~/.config/
+cp -r Linux-Renascentia/config/foot ~/.config/
+cp -r Linux-Renascentia/config/rofi ~/.config/
+cp -r Linux-Renascentia/config/sway ~/.config/
+cp -r Linux-Renascentia/config/swaylock ~/.config/
+cp -r Linux-Renascentia/config/waybar ~/.config/
 ```
 
 ### 4. Instalar o tema GTK3
 
 ```bash
-cp -r Linux-Renascentia/.themes/Linux-Renascentia ~/.themes/
+cp -r Linux-Renascentia/themes/Linux-Renascentia ~/.themes/
 ```
 
 ### 5. Instalar os wallpapers
@@ -349,14 +353,6 @@ The result is an immersive environment, with warm and balanced colors, designed 
 
 ---
 
-
-###  GTK3
-```
-![Preview](2026-06-15T20:43:56,791968021-03:00.png)
-```
-
----
-
 ## 📦 Installation
 
 ### 1. Backup (recommended)
@@ -383,27 +379,28 @@ cd Linux-Renascentia
 ```
 or
 ```bash
-git clone https://github.com/tu-usuario/Linux-Renascentia.git
+git clone https://github.com/DionatanFelipe/linuxrenascentia.git
 cd Linux-Renascentia
 ```
+
 
 ### 3. Install Sway configurations
 
 Copy the folders to `~/.config/`:
 
 ```bash
-cp -r Linux-Renascentia/.config/dunst ~/.config/
-cp -r Linux-Renascentia/.config/foot ~/.config/
-cp -r Linux-Renascentia/.config/rofi ~/.config/
-cp -r Linux-Renascentia/.config/sway ~/.config/
-cp -r Linux-Renascentia/.config/swaylock ~/.config/
-cp -r Linux-Renascentia/.config/waybar ~/.config/
+cp -r Linux-Renascentia/config/dunst ~/.config/
+cp -r Linux-Renascentia/config/foot ~/.config/
+cp -r Linux-Renascentia/config/rofi ~/.config/
+cp -r Linux-Renascentia/config/sway ~/.config/
+cp -r Linux-Renascentia/config/swaylock ~/.config/
+cp -r Linux-Renascentia/config/waybar ~/.config/
 ```
 
 ### 4. Install GTK3 theme
 
 ```bash
-cp -r Linux-Renascentia/.themes/Linux-Renascentia ~/.themes/
+cp -r Linux-Renascentia/themes/Linux-Renascentia ~/.themes/
 ```
 
 ### 5. Install wallpapers
@@ -580,7 +577,8 @@ cd Linux-Renascentia
 o
 
 ```bash
-git clone https://github.com/tu-usuario/Linux-Renascentia.git
+git clone https://github.com/DionatanFelipe/linuxrenascentia.git
+
 cd Linux-Renascentia
 ```
 
@@ -589,18 +587,18 @@ cd Linux-Renascentia
 Copia las carpetas a `~/.config/`:
 
 ```bash
-cp -r Linux-Renascentia/.config/dunst ~/.config/
-cp -r Linux-Renascentia/.config/foot ~/.config/
-cp -r Linux-Renascentia/.config/rofi ~/.config/
-cp -r Linux-Renascentia/.config/sway ~/.config/
-cp -r Linux-Renascentia/.config/swaylock ~/.config/
-cp -r Linux-Renascentia/.config/waybar ~/.config/
+cp -r Linux-Renascentia/config/dunst ~/.config/
+cp -r Linux-Renascentia/config/foot ~/.config/
+cp -r Linux-Renascentia/config/rofi ~/.config/
+cp -r Linux-Renascentia/config/sway ~/.config/
+cp -r Linux-Renascentia/config/swaylock ~/.config/
+cp -r Linux-Renascentia/config/waybar ~/.config/
 ```
 
 ### 4. Instalar el tema GTK3
 
 ```bash
-cp -r Linux-Renascentia/.themes/Linux-Renascentia ~/.themes/
+cp -r Linux-Renascentia/themes/Linux-Renascentia ~/.themes/
 ```
 
 ### 5. Instalar los wallpapers
