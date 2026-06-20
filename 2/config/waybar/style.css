@@ -177,3 +177,7 @@ button:hover {
 #keyboard-state > label.locked {
     color: #6fae8a;
 }
+#language {
+    min-width: 15px;
+
+}
