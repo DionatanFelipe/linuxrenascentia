@@ -13,11 +13,17 @@
 
 2.0
 
-![Preview](captura/2.01.png)
-
 ![Preview](captura/desb.jpg)
 
 ![Preview](captura/bloq.jpg)
+
+
+![Preview](captura/2.01.png)
+
+
+
+![Preview](captura/wallp.png)
+
 
 
 
