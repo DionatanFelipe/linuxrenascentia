@@ -250,28 +250,12 @@ include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "
 
 
 
-# Papel de parade
- # output * bg  /home/alpha-ai/Imagens/Papéis de parede/3.jpg fill o fill estica
- #  Manter proporção (recomendado): output * bg /home/alpha-ai/Imagens/Papéis\ de\ parede/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg fit
- #  Boa opção se quer tela cheia sem deformar.  output * bg /home/alpha-ai/Imagens/Papéis\ de\ parede/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg center
  
- #convert input.jpg -resize 1920x1080^ -gravity center -extent 1920x1080 output.jpg
  
- #Repetir (tile):
-#output * bg /home/alpha-ai/Imagens/Papéis\ de\ parede/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg tile
-
-output * bg  /home/alpha-ai/Imagens/Papéis de parede/1920px-Botticelli-primavera.jpg fill
-
+output * bg  $HOME/img/wallpaper/1920px-Botticelli-primavera.jpg fill
 
 #Tela de bloqeuio
 bindsym $mod+Shift+b exec swaylock 
-
-#bindsym $mod+Shift+b exec swaylock -i "/home/alpha-ai/Imagens/Papéis de parede/1920px-Botticelli-primavera.jpg"
-#bindsym $mod+Shift+b exec /home/alpha-ai/.config/sway/lock.sh
-#exec swayidle -w before-sleep /home/alpha-ai/.config/sway/lock.sh
-
-# Executa seu script de lock quando a tampa é fechada
-# bindswitch lid:on exec /home/alpha-ai/.config/sway/lock.sh
 
 # client.focused   <borda>          <fundo>        <texto>    <indicator>  <child_border>
 #client.focused     #cd7f32          #202824        #ffffff    #cd7f32       #cd7f32
