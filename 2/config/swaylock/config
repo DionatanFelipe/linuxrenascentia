@@ -14,14 +14,14 @@
 image="$HOME/img/wallpaper/1920px-Botticelli-primavera.jpg"
 scaling=fill
 font=DejaVu Serif
-font-size=32
+font-size=35
 # Indicador grande
-indicator-radius=125
-indicator-thickness=14
+indicator-radius=175
+indicator-thickness=30
 # Anel externo (dourado)
-ring-color=#CD7F32
+ring-color=#a3b18a
 inside-color=#0A0C0E
-text-color=#F5F1E6
+text-color=#e6d1a0
 # Simula anel interno mais claro (feito pelo highlight ao pressionar tecla)
 key-hl-color=#E6D1A0
 bs-hl-color=#C95A3A
