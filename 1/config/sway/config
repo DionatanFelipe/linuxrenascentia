@@ -249,17 +249,6 @@ include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "
 #bindsym $mod+Shift+b exec swaylock
 
 
-
-# Papel de parade
- # output * bg  /home/alpha-ai/Imagens/Papéis de parede/3.jpg fill o fill estica
- #  Manter proporção (recomendado): output * bg /home/alpha-ai/Imagens/Papéis\ de\ parede/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg fit
- #  Boa opção se quer tela cheia sem deformar.  output * bg /home/alpha-ai/Imagens/Papéis\ de\ parede/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg center
- 
- #convert input.jpg -resize 1920x1080^ -gravity center -extent 1920x1080 output.jpg
- 
- #Repetir (tile):
-#output * bg /home/alpha-ai/Imagens/Papéis\ de\ parede/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg tile
-
 output * bg  $HOME/img/wallpaper/1920px-Botticelli-primavera.jpg fill
 
 
