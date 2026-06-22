@@ -11,7 +11,7 @@
 # SWAYLOCK - TEMA PREMIUM ESCURO/DOURADO
 # Fundo sólido + imagem
 # SWAYLOCK - TEMA ESCURO/DOURADO PREMIUM COM ANEL DUPLO SIMULADO
-image="/home/alpha-ai/Imagens/Papéis de parede/1920px-Botticelli-primavera.jpg"
+image="$HOME/img/wallpaper/1920px-Botticelli-primavera.jpg"
 scaling=fill
 font=DejaVu Serif
 font-size=32
