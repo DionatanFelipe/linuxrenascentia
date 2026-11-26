@@ -1,0 +1,143 @@
+
+/* ==========================================
+   RENAISSANCE — ROFI 2.0
+   WARM PETROL / EMERALD / ANTIQUE GOLD
+   ========================================== */
+
+* {
+    font: "Iosevka Nerd Font Medium 11";
+    background-color: transparent;
+    text-color: #E8DFCE;
+}
+
+/* WINDOW */
+window {
+    background-color: #10231F;
+    border: 1px;
+    border-color: #647D78;
+    border-radius: 13px;
+}
+
+/* MAIN */
+mainbox {
+    background-color: transparent;
+    padding: 15px;
+    spacing: 12px;
+}
+
+/* SEARCH */
+inputbar {
+    background-color: #1B3931;
+    border: 1px;
+    border-color: #B58A4B;
+    border-radius: 9px;
+    padding: 12px 14px;
+    spacing: 10px;
+}
+
+prompt {
+    text-color: #D6B477;
+}
+
+entry {
+    background-color: transparent;
+    text-color: #F2EBDD;
+    placeholder-color: #A9B3A0;
+}
+
+/* LIST */
+listview {
+    background-color: transparent;
+    border: 0px;
+    padding: 3px;
+    spacing: 5px;
+    lines: 10;
+    columns: 1;
+    fixed-height: false;
+    dynamic: true;
+    scrollbar: false;
+}
+
+/* ELEMENTS */
+element {
+    background-color: transparent;
+    border: 1px;
+    border-color: transparent;
+    border-radius: 8px;
+    padding: 10px 12px;
+    spacing: 12px;
+    text-color: #E8DFCE;
+}
+
+/* NORMAL */
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color: #E8DFCE;
+}
+
+/* SELECTED */
+element selected.normal {
+    background-color: #B58A4B;
+    text-color: #17251F;
+    border: 1px;
+    border-color: #D6B477;
+}
+
+/* ICONS */
+element-icon {
+    background-color: transparent;
+    size: 25px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+}
+
+/* URGENT */
+element normal.urgent,
+element alternate.urgent {
+    background-color: transparent;
+    text-color: #D28A7D;
+}
+
+element selected.urgent {
+    background-color: #A14B4B;
+    text-color: #F2F4F3;
+    border: 1px;
+    border-color: #D28A7D;
+}
+
+/* ACTIVE */
+element normal.active,
+element alternate.active {
+    text-color: #D6B477;
+}
+
+element selected.active {
+    background-color: #B58A4B;
+    text-color: #17251F;
+    border: 1px;
+    border-color: #D6B477;
+}
+
+/* SCROLLBAR */
+scrollbar {
+    background-color: transparent;
+    handle-color: #B58A4B;
+    handle-width: 4px;
+}
+
+/* MESSAGE */
+message {
+    background-color: transparent;
+    border: 0px;
+    padding: 8px;
+}
+
+textbox {
+    background-color: transparent;
+    text-color: #E8DFCE;
+}
+

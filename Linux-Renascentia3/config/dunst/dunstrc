@@ -1,0 +1,64 @@
+
+[global]
+    font = "Inter 10"
+    width = 340
+    height = 180
+
+    origin = top-right
+    offset = (20, 48)
+
+    padding = 12
+    horizontal_padding = 14
+
+    frame_width = 1
+    frame_color = "#B58A4B"
+
+    corner_radius = 9
+    gap_size = 6
+    separator_height = 1
+    separator_color = frame
+
+    idle_threshold = 120
+    transparency = 0
+
+    progress_bar = true
+    progress_bar_height = 5
+    progress_bar_frame_width = 0
+    progress_bar_min_width = 150
+    progress_bar_max_width = 300
+
+    timeout = 5
+    markup = full
+    format = "<b>%s</b>\n%b"
+
+    alignment = left
+    vertical_alignment = center
+
+    show_age_threshold = 60
+    sort = yes
+
+    mouse_left_click = close_current
+    mouse_middle_click = do_action
+    mouse_right_click = close_all
+
+[urgency_low]
+    background = "#10251F"
+    foreground = "#84969A"
+    frame_color = "#315044"
+    highlight = "#84969A"
+    timeout = 4
+
+[urgency_normal]
+    background = "#0D201D"
+    foreground = "#E8DFCE"
+    frame_color = "#B58A4B"
+    highlight = "#B58A4B"
+    timeout = 5
+
+[urgency_critical]
+    background = "#291B19"
+    foreground = "#F2F4F3"
+    frame_color = "#A14B4B"
+    highlight = "#A14B4B"
+    timeout = 0
+

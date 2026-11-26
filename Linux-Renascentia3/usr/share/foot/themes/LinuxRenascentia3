@@ -1,0 +1,33 @@
+[colors]
+foreground=e6e6e0    # pergaminho apagado (legível, sem agressividade)
+background=0a0f0c    # quase preto esverdeado (laboratório antigo)
+
+# --- BASE ESCURA ---
+regular0=101612      # sombra orgânica
+regular1=8a4b4b      # ferrugem / sangue seco (alerta suave)
+regular2=4f7a63      # verde alquímico apagado (não neon)
+regular3=a8733a      # cobre queimado (principal identidade)
+regular4=7a5a3a      # bronze escuro
+regular5=6a5a7a      # roxo alquímico (muito discreto)
+regular6=4f6f6a      # vidro verde antigo
+regular7=d8d6cf      # papel envelhecido
+
+# --- BRILHOS (NÃO NEON, só "resíduo de luz") ---
+bright0=1a221d
+bright1=a86262
+bright2=6f9a82
+bright3=c08a4a
+bright4=9a6a3a
+bright5=8a7a9a
+bright6=6f9f98
+bright7=e8e6de
+
+# --- SOMBRAS (profundidade real) ---
+dim0=0a0f0c
+dim1=5a2f2f
+dim2=2f4a3c
+dim3=5a3f1f
+dim4=4a3218
+dim5=4a3a52
+dim6=2f4a48
+dim7=8a8a84

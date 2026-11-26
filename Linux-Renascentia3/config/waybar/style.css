@@ -1,0 +1,362 @@
+
+/* =====================================================
+   RENAISSANCE — WAYBAR
+   Petrol / Emerald / Antique Gold
+   ===================================================== */
+
+* {
+    font-family: "Inter", "Crimson Pro",
+                 "Junicode", "Font Awesome",
+                 "Symbols Nerd Font", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    min-height: 0;
+}
+
+/* =====================================================
+   BASE
+   ===================================================== */
+
+window#waybar {
+    background: #0D201D;
+    color: #E8DFCE;
+    border: none;
+    border-bottom: 1px solid rgba(132, 150, 154, 0.35);
+    transition: background-color 0.3s ease;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+window#waybar.empty #window {
+    background: transparent;
+}
+
+/* =====================================================
+   BUTTONS
+   ===================================================== */
+
+button {
+    border: none;
+    box-shadow: none;
+    border-radius: 7px;
+    background: transparent;
+    color: #84969A;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: rgba(181, 138, 75, 0.12);
+    color: #E8DFCE;
+    box-shadow: none;
+}
+
+/* =====================================================
+   WORKSPACES
+   Preservando o estilo que você gostou
+   ===================================================== */
+
+#workspaces {
+    margin: 0 5px;
+    padding: 3px 0;
+}
+
+#workspaces button {
+    color: #84969A;
+    padding: 0 12px;
+    margin: 2px 2px;
+    border-radius: 7px;
+    background: #17332D;
+    transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+    background: rgba(181, 138, 75, 0.18);
+    color: #E8DFCE;
+}
+
+#workspaces button.focused {
+    background: #315044;
+    color: #E8DFCE;
+    border-bottom: 2px solid #B58A4B;
+}
+
+#workspaces button.urgent {
+    background: #A14B4B;
+    color: #FFFFFF;
+}
+
+#workspaces button:not(.focused):not(.urgent) {
+    background: transparent;
+    color: #84969A;
+}
+
+/* =====================================================
+   MODE
+   ===================================================== */
+
+#mode {
+    background: #B58A4B;
+    color: #0D201D;
+    padding: 0 12px;
+    margin: 4px 6px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+/* =====================================================
+   WINDOW TITLE
+   ===================================================== */
+
+#window {
+    color: #E8DFCE;
+    padding: 0 14px;
+    margin: 0 8px;
+    font-family: "Crimson Pro", serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* =====================================================
+   SCRATCHPAD
+   ===================================================== */
+
+#scratchpad {
+    color: #84969A;
+    padding: 0 9px;
+    margin: 0 4px;
+}
+
+#scratchpad:not(.empty) {
+    color: #D6B477;
+    background: rgba(181, 138, 75, 0.13);
+    border-radius: 6px;
+}
+
+/* =====================================================
+   MUSIC — DESTAQUE CULTURAL
+   ===================================================== */
+
+#mpd {
+    color: #E8DFCE;
+    background: #17332D;
+    padding: 0 12px;
+    margin: 4px 6px;
+    border-radius: 7px;
+}
+
+#mpd.playing {
+    color: #E8DFCE;
+}
+
+#mpd.paused {
+    color: #84969A;
+}
+
+#mpd.stopped,
+#mpd.disconnected {
+    color: #84969A;
+}
+
+/* =====================================================
+   SYSTEM MONITORING
+   CPU / RAM / TEMPERATURE
+   ===================================================== */
+
+#cpu,
+#memory,
+#temperature {
+    color: #C8D2CA;
+    padding: 0 9px;
+    margin: 0 2px;
+}
+
+#cpu {
+    color: #B8C9BD;
+}
+
+#memory {
+    color: #C5B99E;
+}
+
+#temperature {
+    color: #D0B27B;
+}
+
+#temperature.critical {
+    color: #A14B4B;
+    background: rgba(161, 75, 75, 0.15);
+    border-radius: 6px;
+}
+
+/* =====================================================
+   BATTERY
+   ===================================================== */
+
+#battery {
+    color: #E8DFCE;
+    padding: 0 9px;
+    margin: 0 3px;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #B58A4B;
+}
+
+#battery.warning:not(.charging) {
+    color: #D6B477;
+}
+
+#battery.critical:not(.charging) {
+    color: #A14B4B;
+    animation: blink 0.8s linear infinite alternate;
+}
+
+@keyframes blink {
+    to {
+        opacity: 0.55;
+    }
+}
+
+/* =====================================================
+   AUDIO
+   ===================================================== */
+
+#pulseaudio,
+#wireplumber {
+    color: #E8DFCE;
+    padding: 0 9px;
+    margin: 0 3px;
+}
+
+#pulseaudio.muted,
+#wireplumber.muted {
+    color: #84969A;
+}
+
+/* =====================================================
+   NETWORK
+   ===================================================== */
+
+#network {
+    color: #B8C9BD;
+    padding: 0 9px;
+    margin: 0 3px;
+}
+
+#network.disconnected {
+    color: #A14B4B;
+}
+
+/* =====================================================
+   BACKLIGHT
+   ===================================================== */
+
+#backlight {
+    color: #D6B477;
+    padding: 0 8px;
+    margin: 0 3px;
+}
+
+/* =====================================================
+   CLOCK — PEÇA PRINCIPAL
+   ===================================================== */
+
+#clock {
+    font-family: "Crimson Pro", serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #E8DFCE;
+
+    background: #17332D;
+    padding: 0 13px;
+    margin: 4px 6px;
+    border-radius: 7px;
+}
+
+/* =====================================================
+   IDLE INHIBITOR
+   ===================================================== */
+
+#idle_inhibitor {
+    color: #84969A;
+    padding: 0 8px;
+    margin: 0 3px;
+}
+
+#idle_inhibitor.activated {
+    color: #B58A4B;
+}
+
+/* =====================================================
+   TRAY
+   ===================================================== */
+
+#tray {
+    padding: 0 7px;
+    margin: 0 4px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    background: rgba(161, 75, 75, 0.2);
+    border-radius: 5px;
+}
+
+/* =====================================================
+   KEYBOARD / LANGUAGE
+   ===================================================== */
+
+#language {
+    color: #C8D2CA;
+    padding: 0 8px;
+    margin: 0 3px;
+        min-width: 13px;
+}
+
+#keyboard-state {
+    padding: 0 6px;
+    margin: 0 3px;
+}
+
+#keyboard-state > label {
+    color: #84969A;
+    padding: 0 3px;
+}
+
+#keyboard-state > label.locked {
+    color: #B58A4B;
+}
+
+/* =====================================================
+   POWER
+   ===================================================== */
+
+#custom-power {
+    color: #B58A4B;
+    padding: 0 12px;
+    margin: 3px 5px;
+    border-radius: 7px;
+    transition: all 0.2s ease;
+}
+
+#custom-power:hover {
+    background: rgba(161, 75, 75, 0.18);
+    color: #E8DFCE;
+}
+
+/* =====================================================
+   SPACING
+   ===================================================== */
+
+#workspaces,
+#window {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
