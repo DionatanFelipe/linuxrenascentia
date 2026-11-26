@@ -98,6 +98,39 @@ ROFI 2.0
 
 https://addons.mozilla.org/firefox/addon/linux-renascentia/
 
+---
+# 3.0
+
+
+![Preview](captura/3-001.png)
+![Preview](captura/3-011.png)
+![Preview](captura/3-004.png)
+
+
+
+
+# Atenção - Attention
+
+
+
+![Preview](captura/3-013.png)
+
+
+
+![Preview](captura/3-005.png)
+---
+
+## Rofi
+
+![Preview](captura/3-012.png)
+
+---
+
+## Dunst
+
+![Preview](captura/3-014.png)
+
+
 
 
 ---
